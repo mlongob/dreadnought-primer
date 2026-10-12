@@ -1,6 +1,6 @@
 ## History: from Tidenought to the jam
 
-The deck you'll meet today took shape after the Parallax Tide ban in January 2026. Before that it was a control-combo deck built around Parallax Tide, and almost everything written about it from that era describes a different deck.
+The deck you'll meet today took shape after the Parallax Tide ban in January 2026. Before that, the standard list was a control-combo deck built around Parallax Tide, and almost everything written about it from that era describes a different deck.
 
 **The Tide era.** The standard list ran sixteen Islands, two Mishra's Factory, and three Parallax Tide in the sideboard, often alongside Misdirection and sometimes Accumulated Knowledge. [Tide]{Parallax Tide} with Stifle on the return trigger was a one-sided Armageddon, and it gave the deck a third mode beside jamming and building up: tide the opponent out of lands and win with Factory or an unopposed Dreadnought. Factory was there as a Tide-proof win condition against Stasis and control, and Misdirection won the counter wars. In 2025 Stiflenought, Replenish and Tide Control were about one registered list in six between them, and the ban announcement put the three at 30% of top 8s at events of 65 or more players.
 
@@ -14,5 +14,5 @@ The deck you'll meet today took shape after the Parallax Tide ban in January 202
 
 {cards: Brain Freeze | Essence Flare | Tsabo's Web | Dominate}
 
-The other thing that emerged post-ban is Brain Freeze as a second win condition. A no-AK list rarely out-cards an opponent who brings ten answers to a 12/12, so against those decks it stops trying and takes their library instead. Nearly every sideboard now holds two Freeze; the question the builds split on is whether one belongs in the main.
+Brain Freeze is the plan B that took Tide's place. A no-AK list rarely out-cards an opponent who brings ten answers to a 12/12, so against those decks it stops trying and takes their library instead. Nearly every sideboard now holds two Freeze; the question the builds split on is whether one belongs in the main.
 
