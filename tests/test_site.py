@@ -252,3 +252,9 @@ def test_the_sidebar_links_the_repository(result):
 
 def test_preview_has_no_edit_links(preview):
     assert "/edit/main/" not in preview.html
+
+
+def test_link_previews_show_the_art_not_the_whole_card(result):
+    image = re.search(r'<meta property="og:image" content="([^"]+)"', result.html).group(1)
+    assert "/art_crop/" in image
+    assert '<meta name="twitter:card" content="summary_large_image">' in result.html

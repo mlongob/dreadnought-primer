@@ -134,7 +134,7 @@ def build(root: Path, out: Path | None, review: dict[str, str] | None = None, *,
     if review is not None:
         current = {str(s.path) for s in outline.sources}
         changes += [Change("", "removed-file", path, "taken off the page") for path in sorted(review) if path not in current]
-    share_image = register.get(outline.share_card).image("large") if outline.share_card else ""
+    share_image = register.get(outline.share_card).image("art_crop") if outline.share_card else ""   # the art alone, for link previews
     hero_art = register.get(outline.share_card).image("art_crop") if outline.share_card else ""
     html = render_page(outline.title, outline.subtitle, outline.dateline, toc, body,
                        outline.description, share_image, outline.site_url, changes, banner=preview,
