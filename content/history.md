@@ -8,6 +8,8 @@ The deck you'll meet today took shape after the Parallax Tide ban in January 202
 
 **The ban.** Premodern was added to Magic Online in mid-December 2025. On January 18, 2026, Martin Berlin banned Parallax Tide, citing the play pattern rather than raw win rate: the card was a one-sided Armageddon showing up as a plan in several unrelated archetypes. The expectation at the time was that Replenish and Tide Control would suffer most and Stiflenought least, since Tide was a sideboard plan for it rather than a maindeck one. That is how it played out.
 
+**The jam came first.** Jamming the Dreadnought wasn't new. Dave Kaplan's jam build, which resolves a Dreadnought, protects it and spends every slot on that, existed before Tidenought, and after the ban it is the strategy the deck went back to. With one difference: Kaplan's build has no plan B at all, and the lists that took over didn't commit to the jam alone. They replaced Tide's plan B with another one, Brain Freeze.
+
 **After the ban.** Without Tide there was no reason to play a slower game, and the deck got leaner. Factory left, because it was only ever there to win through Tide and because every free spell in the deck wants Islands. Misdirection went the other way: it moved from the sideboard into most main decks. The sideboard reorganized around three cards that were fringe before and standard now — Brain Freeze, Essence Flare and Tsabo's Web — with Dominate and Back to Basics as the minority choices. Accumulated Knowledge stayed where it was, in about a quarter of lists. Four builds settled out over 2026; the next chapter describes them.
 
 {cards: Brain Freeze | Essence Flare | Tsabo's Web | Dominate}
