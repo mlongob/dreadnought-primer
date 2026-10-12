@@ -1,0 +1,103 @@
+# Style checks. Warnings, not errors (python -m builder check --strict makes them errors).
+# Add a pattern whenever the author corrects something, so it can't come back.
+
+[spelling]  # British → US. Whole words, any case; plural/-d/-ed/-ing/-s forms included.
+favourable = "favorable"
+unfavourable = "unfavorable"
+favourite = "favorite"
+favour = "favor"
+colour = "color"
+behaviour = "behavior"
+centre = "center"
+defence = "defense"
+offence = "offense"
+neutralise = "neutralize"
+prioritise = "prioritize"
+recognise = "recognize"
+realise = "realize"
+organise = "organize"
+minimise = "minimize"
+maximise = "maximize"
+analyse = "analyze"
+grey = "gray"
+catalogue = "catalog"
+colourless = "colorless"
+licence = "license"
+apologise = "apologize"
+towards = "toward"
+maths = "math"
+labelled = "labeled"
+practise = "practice"
+
+[stats]  # numbers in prose date the document; allowed only in chapters listed in outline.toml stats_ok
+patterns = [
+  '\d+(\.\d+)?\s?%',
+  '\b\d+ of (the|its) (\w+ )?(decks|matchups|lists|rows)\b',
+  '\b(two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|twenty) of the (mapped |unmapped )?(decks|matchups|rows)\b',
+]
+
+# Claims the author has corrected: pattern (regex) and the correction.
+
+[[claims]]
+pattern = "Portent is an instant"
+fix = "Portent is a sorcery"
+
+[[claims]]
+pattern = "Impulse (then )?shuffles"
+fix = "Impulse puts the rest on the bottom (Oracle text); it doesn't shuffle"
+
+[[claims]]
+pattern = "Annul (can )?counters? (a |the |their )?Brain Freeze"
+fix = "Annul doesn't counter Brain Freeze (it's an instant)"
+
+[[claims]]
+pattern = "(Tendrils|Mind's Desire|Rule of Law)[^.]*\\b(is|are) (Premodern-)?legal"
+fix = "Tendrils, Mind's Desire and Rule of Law are not Premodern-legal"
+
+[[claims]]
+pattern = "Pernicious Deed[^.]*\\b(black-white|white-black|BW)\\b"
+fix = "Pernicious Deed is black-green"
+
+[[claims]]
+pattern = "Negator[^.]*\\bmana value (three|3)\\b"
+fix = "Negator is mana value 4"
+
+[[claims]]
+pattern = "Duress (can|could) take (the |a |your )?Dreadnought"
+fix = "Dreadnought is a creature; Duress can't take it"
+
+[[claims]]
+pattern = "\\bPeek (at )?yourself"
+fix = "never Peek yourself"
+
+[[claims]]
+pattern = "Meddling Mage[^.]*\\btrigger"
+fix = "Meddling Mage has no trigger"
+
+[[claims]]
+pattern = "Stifle[^.]*Sutured Ghoul's exile"
+fix = "Sutured Ghoul's exile is a replacement effect; Stifle can't touch it"
+
+[[claims]]
+pattern = "Hidden Gibbons[^.]*\\b(3/3|5/5)"
+fix = "Hidden Gibbons flips to a 4/4"
+
+[[claims]]
+pattern = "Wasteland[^.]*\\b(attack|hit|destroy|tak)\\w*[^.]*\\b(your|our) (mana|lands?|Islands?)"
+fix = "Wasteland has nothing to hit: the deck plays only basic Islands (Port is the land that matters)"
+
+[[claims]]
+pattern = "\\bChain\\b[^.]*\\b(a|the) resolved Decree|\\bChain\\b[^.]*\\b(or|and) Decree\\b"
+fix = "Chain can't answer a resolved Decree of Silence: Decree counters it like any other spell"
+
+[[claims]]
+pattern = "Flare[^.]*tax, not a kill"
+fix = "Essence Flare does kill Psychatog: pumps last until end of turn, the -0/-1 counters stay, so it dies after two upkeeps"
+
+[[claims]]
+pattern = "Dominate[^.]*three mana"
+fix = "Dominate costs {X}{1}{U}{U}: four mana to take a Dreadnought"
+
+[[claims]]
+pattern = "[Ll]et the Survival resolve"
+fix = "Never let Survival of the Fittest resolve when you can counter it; Stifle what it finds only when you have no answer to it"

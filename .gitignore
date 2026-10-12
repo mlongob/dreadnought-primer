@@ -1,0 +1,14 @@
+# build output
+site/
+# private material: source PDFs, transcript, DB extracts, downloaded images, handoff archive
+private/
+*.tar.gz
+tools/cardimages/img/
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+.superpowers/
+*.egg-info/

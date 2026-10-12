@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="{{ t.html_lang }}" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} — {{ subtitle }}</title>
+<meta name="description" content="{{ description }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ title }} — {{ subtitle }}">
+<meta property="og:description" content="{{ description }}">
+{%- if share_image %}
+<meta property="og:image" content="{{ share_image }}">
+{%- endif %}
+{%- if site_url %}
+<meta property="og:url" content="{{ site_url }}">
+<link rel="canonical" href="{{ site_url }}">
+{%- endif %}
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+  // Dark by default; a stored choice wins before first paint.
+  try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cards.scryfall.io">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&family=Atkinson+Hyperlegible+Next:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/style.css?v={{ version }}">
+<script src="assets/primer.js?v={{ version }}" defer></script>
+</head>
+<body>
+<div class="scrim" data-close-nav></div>
+{%- macro toggle(with_label) %}
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="{{ t.switch_theme }}" data-light="{{ t.light_mode }}" data-dark="{{ t.dark_mode }}">
+  <svg class="sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+  <svg class="moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+  {%- if with_label %}<span class="label">{{ t.light_mode }}</span>{% endif %}
+</button>
+{%- endmacro %}
+{%- macro pdf_button(with_label) %}{% if pdf_name %}
+<a class="pdf-button" href="{{ pdf_name }}" download aria-label="{{ t.download_pdf }}" title="{{ t.download_pdf }}">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg>
+  {%- if with_label %}<span class="label">PDF</span>{% endif %}
+</a>
+{%- endif %}{% endmacro %}
+
+<div class="topbar">
+  <button class="menu" type="button" data-open-nav aria-controls="toc">{{ t.contents }}</button>
+  <span class="where" id="where">{{ toc[0].label if toc else "" }}</span>
+  {{ pdf_button(False) }}
+  {{ toggle(False) }}
+</div>
+
+<div class="shell">
+<nav class="toc" id="toc" aria-label="{{ t.contents }}">
+  <a class="brand" href="#top">{{ title }}<span>{{ subtitle }}</span></a>
+  <ol>
+  {%- for ch in toc %}
+    {%- if ch.children %}
+    <li class="has-kids">
+      <div class="group"><a href="#{{ ch.id }}">{{ ch.label }}</a><button class="disclose" type="button" aria-expanded="false" aria-label="{{ t.show_sections }} {{ ch.label }}"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M3 1.5 6.5 5 3 8.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button></div>
+      <ol>
+      {%- for s in ch.children %}
+        <li><a href="#{{ s.id }}">{{ s.label }}</a></li>
+      {%- endfor %}
+      </ol>
+    </li>
+    {%- else %}
+    <li><a href="#{{ ch.id }}">{{ ch.label }}</a></li>
+    {%- endif %}
+  {%- endfor %}
+  </ol>
+  <div class="foot">{{ toggle(True) }}{{ pdf_button(True) }}{% if repo_url %}
+    <a class="repo-button" href="{{ repo_url }}" aria-label="{{ t.repo }}" title="{{ t.repo }}" rel="noopener"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span class="label">GitHub</span></a>{% endif %}</div>
+</nav>
+
+<main id="top">
+<div class="page">
+<div class="prose">
+
+{%- if banner %}
+<div class="confidential" role="note">{{ t.banner }}</div>
+<div class="confidential-print" aria-hidden="true">{{ t.banner_print }}</div>
+{%- endif %}
+<header class="title">
+  <div class="title-text">
+    <h1>{{ title }}</h1>
+    <p class="subtitle">{{ subtitle }}</p>
+    {%- if description %}
+    <p class="standfirst">{{ description }}</p>
+    {%- endif %}
+    <p class="dateline">{{ dateline }}{% if pdf_name %}<span class="pdf-link"> · <a href="{{ pdf_name }}" download>{{ t.download_pdf }}</a></span>{% endif %}</p>
+  </div>
+  {%- if hero_art %}
+  <figure class="hero-art">
+    <img src="{{ hero_art }}" alt="Phyrexian Dreadnought, art by {{ hero_artist }}" width="571" height="460" loading="eager" fetchpriority="high">
+    <figcaption>{{ t.hero_caption.format(artist=hero_artist) }}</figcaption>
+  </figure>
+  {%- endif %}
+</header>
+
+<nav class="print-toc" aria-hidden="true">
+  <p class="print-toc-title">{{ t.contents }}</p>
+  <ol>
+  {%- for ch in toc %}
+    <li><a href="#{{ ch.id }}">{{ ch.label }}</a>
+    {%- if ch.children %}
+      <ol>{% for s in ch.children %}<li><a href="#{{ s.id }}">{{ s.label }}</a></li>{% endfor %}</ol>
+    {%- endif %}
+    </li>
+  {%- endfor %}
+  </ol>
+</nav>
+{%- if changes is not none %}
+
+<aside class="rv-panel" aria-label="Changes for review">
+  {%- if changes %}
+  <p class="rv-title">Review edition: {{ changes|length }} change{{ "" if changes|length == 1 else "s" }} since the last approved version</p>
+  <ol>
+  {%- for c in changes %}
+    <li>{% if c.id %}<a href="#{{ c.id }}">{% endif %}<span class="rv-where">{{ c.path.replace("content/", "") }}</span> {{ c.snippet }}{% if c.id %}</a>{% endif %}{% if c.kind == "removed-file" %} <em>(taken off the page)</em>{% endif %}</li>
+  {%- endfor %}
+  </ol>
+  {%- else %}
+  <p class="rv-title">No changes since the last approved version.</p>
+  {%- endif %}
+</aside>
+{%- endif %}
+
+{{ body }}
+
+<footer class="colophon">
+  <p>{{ t.license.format(cc='<a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>')|safe }}</p>
+  <p>{{ t.credit.format(scryfall='<a href="https://scryfall.com">Scryfall</a>')|safe }}</p>
+</footer>
+
+</div>
+</div>
+</main>
+</div>
+
+<dialog class="zoom" id="zoom" aria-label="Card">
+  <img alt="">
+  <div class="zcap"><a target="_blank" rel="noopener">{{ t.view_on_scryfall }}</a><button type="button" data-close-zoom>{{ t.close }}</button></div>
+</dialog>
+</body>
+</html>

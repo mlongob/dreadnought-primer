@@ -1,0 +1,66 @@
+# Page metadata and reading order. Every file in content/ must be listed here, and nothing else.
+title = "Mono-Blue Dreadnought"
+subtitle = "A Premodern primer"
+dateline = "Version 0.1 · October 2026"
+# For search engines and link previews (Discord, Reddit, Twitter)
+description = "How Mono-Blue Dreadnought (Stiflenought) plays in Premodern: the combo, every card in the 75, the sideboard, mulligans and the matchups."
+share_card = "Phyrexian Dreadnought"   # the card image shown in link previews, and its art at the top of the page
+share_card_artist = "Pete Venters"     # credited under the art
+site_url = "https://mlongob.github.io/dreadnought-primer/"
+repo_url = "https://github.com/mlongob/dreadnought-primer"   # edit links on every section and the GitHub button                           # the published address, once there is one (adds canonical and og:url)
+
+chapters = [
+  "foreword",
+  "what-this-deck-is",
+  "history",
+  "versions",
+  "the-list",
+  "how-the-deck-plays",
+  "card-analysis-combo",
+  "card-analysis-engine",
+  "mana-base",
+  "sideboard",
+  "close-candidates",
+  "how-to-sideboard",
+  "answers-to-the-dreadnought",
+  "mulligans",
+  "matchups",          # the matchups below are placed after this chapter's intro
+  "quick-reference",
+  "practice",
+  "resources",
+  "changelog",
+]
+
+# Roughly the order you will face them.
+matchups = [
+  "mirror",
+  "sligh",
+  "enchantress",
+  "elves",
+  "goblins",
+  "terrageddon",
+  "oath-ponza",
+  "moneyball",
+  "clerics",
+  "pit-rack",
+  "replenish",
+  "landstill",
+  "web-control",
+  "psychatog",
+  "stasis",
+  "hermit",
+  "gat",
+  "madness",
+  "tinker-fling",
+  "bw-control",
+  "the-rock",
+  "zoo",
+  "angry-hermit",
+  "reanimator",
+  "storm",
+  "iggy-pop",
+  "deadguy-ale",
+]
+
+# Chapters allowed numbers in prose: dated positioning (foreword, intro, history, resources) and land-drop probabilities, which depend only on the fixed 75.
+stats_ok = ["foreword", "what-this-deck-is", "history", "mana-base", "mulligans", "resources", "changelog"]

@@ -1,0 +1,36 @@
+# The 75. Fixed: variants belong in History, Versions and Close candidates, never here.
+# `rows` sets how the composite picture groups the main deck.
+
+rows = [
+  ["Phyrexian Dreadnought", "Stifle", "Vision Charm", "Counterspell", "Foil", "Daze", "Thwart"],
+  ["Gush", "Portent", "Opt", "Impulse", "Peek", "Flash of Insight", "Chain of Vapor", "Powder Keg", "Brain Freeze"],
+  ["Island"],
+]
+
+[main]
+"Phyrexian Dreadnought" = 4
+Stifle = 4
+"Vision Charm" = 4
+Counterspell = 4
+Foil = 4
+Daze = 2
+Thwart = 1
+Gush = 4
+Portent = 4
+Opt = 4
+Impulse = 2
+Peek = 1
+"Flash of Insight" = 2
+"Chain of Vapor" = 1
+"Powder Keg" = 1
+"Brain Freeze" = 1
+Island = 17
+
+[side]
+Annul = 3
+"Back to Basics" = 2
+"Blue Elemental Blast" = 2
+Hydroblast = 2
+"Brain Freeze" = 2
+"Chain of Vapor" = 1
+"Essence Flare" = 3

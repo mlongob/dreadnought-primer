@@ -1,0 +1,506 @@
+/* Mono-U Stiflenought primer. Light tokens on :root, dark on [data-theme="dark"]; pages are served dark. */
+:root {
+  --paper: #FAFBFC;
+  --ink: #18212B;
+  --ink-soft: #56616E;
+  --rule: #DCE2E8;
+  --island: #1B5FAA;
+  --island-tint: #EDF3FA;
+  --panel: #F1F3F6;
+  --del: #B4233C;
+  --ins-bg: #CDEFD8;
+  --shadow: 0 1px 2px rgba(24, 33, 43, .22), 0 2px 8px rgba(24, 33, 43, .08);
+
+  --serif: 'Literata', Georgia, serif;
+  --sans: 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+
+  --measure: 46rem;
+  --margin-col: 14rem;
+  --sidebar: 17rem;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --paper: #10161D;
+  --ink: #DFE5EB;
+  --ink-soft: #96A2AF;
+  --rule: #27313C;
+  --island: #86B7EE;
+  --island-tint: #172434;
+  --panel: #18202A;
+  --del: #F2849A;
+  --ins-bg: #1F4A31;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 2px 10px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1.5rem; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.1875rem/1.68 var(--serif);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: var(--island); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+:focus-visible { outline: 2px solid var(--island); outline-offset: 2px; border-radius: 2px; }
+
+/* ---------- shell ---------- */
+.shell { display: grid; grid-template-columns: var(--sidebar) minmax(0, 1fr); min-height: 100vh; }
+
+.toc {
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  border-right: 1px solid var(--rule);
+  padding: 2rem 1.25rem 1.5rem 1.5rem;
+  font: 400 .9rem/1.35 var(--sans);
+  display: flex; flex-direction: column;
+}
+.toc .brand { font: 650 1.05rem/1.2 var(--serif); color: var(--ink); text-decoration: none; display: block; margin-bottom: 1.75rem; }
+.toc .brand span { display: block; font: 400 .85rem/1.4 var(--sans); color: var(--ink-soft); margin-top: .2rem; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0; }
+.toc a {
+  display: block; padding: .32rem .6rem; margin-left: -.6rem;
+  color: var(--ink-soft); text-decoration: none; border-radius: 4px;
+  border-left: 2px solid transparent;
+}
+.toc a:hover { color: var(--ink); background: var(--panel); }
+.toc a.current { color: var(--island); border-left-color: var(--island); background: var(--island-tint); border-radius: 0 4px 4px 0; }
+.toc ol ol { padding-left: .8rem; margin: .1rem 0 .35rem; display: none; }
+.toc ol ol a { font-size: .85rem; padding-top: .22rem; padding-bottom: .22rem; }
+.toc li.open > ol { display: block; }
+.toc .group { display: flex; align-items: center; }
+.toc .group a { flex: 1; }
+.toc .disclose {
+  border: 0; background: none; color: var(--ink-soft); cursor: pointer;
+  width: 1.6rem; height: 1.6rem; border-radius: 4px; font: inherit; line-height: 1;
+}
+.toc .disclose:hover { background: var(--panel); color: var(--ink); }
+.toc .disclose svg { transition: transform .15s ease; }
+.toc li.open > .group .disclose svg { transform: rotate(90deg); }
+.toc .foot { margin-top: auto; padding-top: 1.5rem; }
+
+.theme-toggle, .pdf-button, .repo-button {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font: 500 .85rem/1 var(--sans); color: var(--ink-soft);
+  background: none; border: 1px solid var(--rule); border-radius: 999px;
+  padding: .5rem .85rem; cursor: pointer;
+}
+.theme-toggle:hover, .pdf-button:hover, .repo-button:hover { color: var(--ink); border-color: var(--ink-soft); }
+.pdf-button { text-decoration: none; }
+.toc .foot { display: flex; gap: .5rem; flex-wrap: wrap; }
+.toc .foot .repo-button, .toc .foot .pdf-button { display: inline-flex; margin-left: 0; padding: .5rem .85rem; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink-soft); }
+.toc .foot .repo-button:hover, .toc .foot .pdf-button:hover { background: none; color: var(--ink); border-color: var(--ink-soft); }
+.topbar .pdf-button { flex: none; padding: .45rem .55rem; margin-right: .4rem; }
+.theme-toggle .moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .moon { display: inline; }
+
+.topbar { display: none; }
+
+/* ---------- page ---------- */
+main { padding: 4.5rem 3rem 6rem; }
+.page { max-width: calc(var(--measure) + var(--margin-col) + 2rem); margin: 0 auto; }
+.prose { max-width: var(--measure); }
+
+/* title block: the words on the left, the Dreadnought's art on the right, shown whole (Scryfall's art crop, never cropped further) */
+header.title {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 2.75rem; align-items: end;
+  margin: 0 0 3rem;
+}
+.title-text { min-width: 0; }
+.hero-art { margin: 0; width: clamp(13rem, 22vw, 17.5rem); }
+.hero-art img { display: block; width: 100%; height: auto; border-radius: 5px; box-shadow: 0 1px 0 color-mix(in srgb, var(--ink) 18%, transparent), 0 18px 40px -22px rgba(0, 0, 0, .55); }
+.hero-art figcaption { font: 400 .8rem/1.4 var(--sans); color: var(--ink-soft); margin-top: .55rem; text-align: right; }
+.standfirst { font: 400 1.18rem/1.55 var(--serif); color: var(--ink); max-width: 34rem; margin: 1.6rem 0 0; }
+h1 {
+  font: 700 clamp(2.6rem, 5.4vw, 4.1rem)/1.02 var(--serif);
+  letter-spacing: -.022em; margin: 0;
+  font-variation-settings: 'opsz' 72;
+}
+.subtitle { font: 400 1.45rem/1.3 var(--serif); font-style: italic; color: var(--ink-soft); margin: .6rem 0 0; }
+.dateline { font: 400 .9rem/1.4 var(--sans); color: var(--ink-soft); margin: 1.4rem 0 0; }
+.dateline a { color: inherit; }
+
+/* chapters open with a rule, so the big sections are easy to spot while scrolling */
+h2 {
+  font: 650 2rem/1.15 var(--serif); letter-spacing: -.012em;
+  margin: 6rem 0 1.25rem; padding-top: 2.25rem; border-top: 1px solid color-mix(in srgb, var(--ink-soft) 45%, transparent);
+  font-variation-settings: 'opsz' 48;
+}
+header.title + h2, header.title + .print-toc + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+h3 { font: 650 1.4rem/1.25 var(--serif); margin: 3rem 0 .9rem; }
+h2 + h3 { margin-top: 1.5rem; }
+p { margin: 0 0 1.05em; text-wrap: pretty; }
+strong { font-weight: 650; }
+ul, ol.prose-list { padding-left: 1.3em; margin: 0 0 1.1em; }
+li { margin-bottom: .45em; }
+li::marker { color: var(--ink-soft); }
+
+
+/* ---------- card images ---------- */
+img.mtg {
+  display: block; width: 100%; height: auto; aspect-ratio: 488 / 680;
+  border-radius: 4.75% / 3.4%;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  cursor: zoom-in;
+}
+.margin-card { float: right; clear: right; width: 34%; margin: .35rem 0 1rem 1.5rem; }
+/* a section never starts beside the previous section's card, so cards can't overlap or drift */
+h2, h3 { clear: right; }
+.cardrow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .9rem; margin: 1.75rem 0; clear: right; }
+.cardrow + .cardrow { margin-top: -.85rem; }
+/* each example hand starts below a rule, so hands and their verdicts read as separate entries */
+.hand { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .45rem; margin: 2.75rem 0 .9rem; padding-top: 1.75rem; border-top: 1px solid color-mix(in srgb, var(--ink-soft) 45%, transparent); clear: right; }
+
+/* combo figure */
+.combo { margin: 2.25rem 0 2.75rem; clear: right; }
+.combo .steps { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 1.1rem; align-items: start; }
+.combo .step p { font: 400 .95rem/1.5 var(--sans); color: var(--ink); margin: .85rem 0 0; }
+.combo .step b { display: block; font: 650 1.05rem/1.3 var(--serif); margin-bottom: .2rem; }
+.combo .join { font: italic 400 1.05rem/1 var(--serif); color: var(--ink-soft); padding-top: 6.5rem; }
+.combo figcaption, .figcap { font: 400 .92rem/1.5 var(--sans); color: var(--ink-soft); margin-top: 1.1rem; }
+
+/* deck composite: stacks of copies */
+.deck { margin: 2rem 0 2.5rem; clear: right; }
+.decklabel, .sbrow figcaption { font: 600 .95rem/1.3 var(--sans); color: var(--ink-soft); margin: 0 0 .7rem; }
+.deck .rowcards { display: flex; flex-wrap: wrap; gap: 1.1rem .75rem; margin-bottom: 1.6rem; }
+.stack { position: relative; width: 5.9rem; }
+.stack img.mtg + img.mtg { margin-top: calc(-139.3% + var(--off, 1.15rem)); }
+
+/* sideboard row */
+.sbrow { margin: 1.5rem 0 2.25rem; clear: right; }
+.sbrow .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.sbrow .half { border-radius: 10px; padding: .9rem .9rem 1.1rem; }
+.sbrow .out { background: var(--panel); }
+.sbrow .in { background: var(--island-tint); }
+.sbrow .lbl { font: 600 .9rem/1 var(--sans); margin-bottom: .8rem; display: flex; justify-content: space-between; }
+.sbrow .out .lbl { color: var(--ink-soft); }
+.sbrow .in .lbl { color: var(--island); }
+.sbrow .stacks { display: flex; flex-wrap: wrap; gap: .9rem .6rem; }
+.sbrow .stack { width: 5.4rem; }
+.sbrow .sbrow .in 
+/* tables */
+.table-wrap { overflow-x: auto; margin: 1.5rem 0 1.75rem; }
+table { border-collapse: collapse; width: 100%; font: 400 .92rem/1.4 var(--sans); font-variant-numeric: tabular-nums; }
+th { text-align: left; font-weight: 600; color: var(--ink-soft); padding: .5rem .75rem .6rem 0; border-bottom: 1.5px solid var(--ink-soft); vertical-align: bottom; }
+td { padding: .5rem .75rem .5rem 0; border-bottom: 1px solid var(--rule); }
+td.num, th.num { text-align: right; }
+
+
+
+table.sbmap td:first-child { white-space: nowrap; }
+/* the lookup table: shade alternate rows so a wrapped Out/In cell can't lose its row */
+table.sbmap tbody tr:nth-child(even) td { background: var(--panel); }
+table.sbmap td:first-child, table.sbmap th:first-child { padding-left: .6rem; }
+table.sbmap td a { color: inherit; text-decoration: none; }
+table.sbmap td a:hover { color: var(--island); text-decoration: underline; }
+blockquote { margin: 1.5rem 0; padding-left: 1.1rem; border-left: 2px solid var(--rule); color: var(--ink-soft); }
+
+/* printed contents page (hidden on screen, where the sidebar does this job) */
+.print-toc { display: none; }
+
+/* preview edition: confidential notice on screen and on every printed page */
+.confidential { margin: 0 0 2.5rem; padding: .8rem 1rem; border: 1.5px solid var(--del); border-radius: 8px; color: var(--del); font: 600 .95rem/1.45 var(--sans); }
+.confidential-print { display: none; }
+
+
+/* review edition */
+.rv-panel { margin: 0 0 3rem; padding: 1rem 1.25rem; border: 1px solid var(--rule); border-radius: 10px; background: var(--panel); font: 400 .9rem/1.45 var(--sans); }
+.rv-panel .rv-title { font-weight: 600; margin: 0 0 .6rem; }
+.rv-panel ol { margin: 0; padding-left: 1.4rem; max-height: 22rem; overflow-y: auto; }
+.rv-panel li { margin-bottom: .3rem; }
+.rv-panel a { text-decoration: none; }
+.rv-where { color: var(--ink-soft); margin-right: .35rem; }
+.rv { margin: 0 0 1.05em; padding: .55rem .9rem; border-left: 3px solid var(--island); background: var(--island-tint); border-radius: 0 6px 6px 0; scroll-margin-top: 5rem; }
+.rv p { margin: 0; }
+.rv-note { font: 400 .85rem/1.5 var(--sans); }
+.rv del { color: var(--del); text-decoration-thickness: 1.5px; }
+.rv ins { text-decoration: none; background: var(--ins-bg); border-radius: 2px; padding: 0 .1em; }
+.rv-remove { border-left-color: var(--del); }
+.rv-add ins { background: none; padding: 0; }
+
+/* copy-link anchors on headings */
+.anchor { margin-left: .45em; color: var(--ink-soft); text-decoration: none; font-weight: 400; opacity: 0; transition: opacity .12s ease; }
+h2:hover .anchor, h3:hover .anchor, .anchor:focus-visible { opacity: 1; }
+.edit { margin-left: .35em; color: var(--ink-soft); opacity: 0; transition: opacity .12s ease; vertical-align: .05em; }
+.edit:hover { color: var(--island); }
+h2:hover .edit, h3:hover .edit, .edit:focus-visible { opacity: 1; }
+.anchor.copied::after { content: " copied"; font: 500 .8rem/1 var(--sans); }
+@media (hover: none) { .anchor, .edit { opacity: .35; } }
+
+/* card names in the text */
+a.cardref { color: inherit; text-decoration: underline dotted; text-decoration-color: var(--ink-soft); text-decoration-thickness: 1px; text-underline-offset: .22em; }
+a.cardref:hover, a.cardref:focus-visible { color: var(--island); text-decoration-style: solid; text-decoration-color: var(--island); }
+.peek { position: fixed; left: 0; top: 0; width: 240px; z-index: 40; pointer-events: none; opacity: 0; transition: opacity .12s ease; }
+.peek.on { opacity: 1; }
+.peek img { display: block; width: 100%; height: auto; border-radius: 4.75% / 3.4%; box-shadow: 0 6px 28px rgba(0, 0, 0, .45); }
+
+footer.colophon { margin-top: 6rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font: 400 .85rem/1.55 var(--sans); color: var(--ink-soft); }
+
+/* lightbox */
+dialog.zoom { border: 0; padding: 0; background: none; max-width: min(92vw, 30rem); }
+dialog.zoom::backdrop { background: rgba(10, 14, 20, .72); }
+dialog.zoom img { width: 100%; height: auto; display: block; border-radius: 4.75% / 3.4%; }
+dialog.zoom .zcap { display: flex; justify-content: space-between; align-items: center; margin-top: .75rem; font: 500 .9rem/1.3 var(--sans); color: #E8EDF2; }
+dialog.zoom .zcap a { color: #A9CCF5; }
+dialog.zoom button { font: inherit; color: #E8EDF2; background: none; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: .35rem .8rem; cursor: pointer; }
+
+/* ---------- wide screens: single cards move into the margin; everything else keeps the text width ---------- */
+@media (min-width: 1440px) {
+  .margin-card { width: var(--margin-col); margin-right: calc(-1 * (var(--margin-col) + 2rem)); margin-left: 0; margin-top: .45rem; }
+}
+
+/* ---------- small screens ---------- */
+@media (max-width: 960px) {
+  .shell { display: block; }
+  .toc {
+    position: fixed; inset: 0 auto 0 0; width: min(20rem, 86vw); z-index: 30;
+    background: var(--paper); transform: translateX(-102%); transition: transform .2s ease;
+    box-shadow: 0 0 40px rgba(0,0,0,.25);
+  }
+  body.nav-open .toc { transform: none; }
+  body.nav-open .scrim { position: fixed; inset: 0; background: rgba(10,14,20,.4); z-index: 20; }
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    position: sticky; top: 0; z-index: 10; padding: .6rem 1rem;
+    background: var(--paper); border-bottom: 1px solid var(--rule);
+    font: 500 .9rem/1 var(--sans);
+  }
+  .topbar button.menu { font: inherit; color: var(--ink); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: .5rem .85rem; cursor: pointer; }
+  .topbar .where { color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 0 .75rem; flex: 1; text-align: center; }
+  main { padding: 2.5rem 1rem 4rem; }
+  header.title { grid-template-columns: minmax(0, 1fr); row-gap: 1.75rem; }
+  .hero-art { order: -1; width: 100%; max-width: 571px; }
+  .hero-art figcaption { text-align: left; }
+  html { scroll-padding-top: 4rem; }
+}
+@media (max-width: 640px) {
+  body { font-size: 1.0625rem; }
+  .margin-card { width: 42%; margin-left: 1rem; }
+  .cardrow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hand { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .combo .steps { grid-template-columns: 1fr; }
+  .combo .step { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; align-items: start; }
+  .combo .step p { margin-top: 0; }
+  .combo .join { padding: 0; }
+  .sbrow .pair { grid-template-columns: 1fr; }
+  .stack { width: 5.2rem; }
+  h2 { font-size: 1.7rem; margin-top: 4rem; }
+}
+
+/* ---------- practice puzzles: a board drawn MTGO-style, opponent at the top ---------- */
+.puzzle {
+  --pz-card: 4.6rem; --pz-eye-pupil: var(--paper);
+  margin: 2rem 0 1.5rem; padding: 0; border: 1px solid var(--rule); border-radius: 10px;
+  background: var(--panel); overflow: hidden; clear: right;
+  font: 400 .85rem/1.3 var(--sans);
+}
+.pz-turn { display: flex; align-items: center; justify-content: center; gap: .5rem .6rem; padding: .6rem .6rem;
+  border-block: 1px solid var(--rule); background: var(--paper); }
+/* the turn number as a small badge: the number large, the word small above it */
+.pz-turnno { flex: none; display: inline-grid; justify-items: center; gap: .1rem; padding: .3rem .6rem .35rem; line-height: 1;
+  border: 1px solid color-mix(in srgb, var(--island) 45%, var(--rule)); border-radius: 8px;
+  background: color-mix(in srgb, var(--island) 10%, var(--paper)); }
+.pz-turnno small, .pz-storm small { font-size: .62rem; color: var(--ink-soft); }
+.pz-turnno b, .pz-storm b { font-size: 1.2rem; color: var(--ink); }
+/* the storm count, when a puzzle needs one: the same badge as the turn, on the other side of the bar */
+/* target arrows: drawn over the board by primer.js in the attack arrows' bordeaux (the lean already says who cast the spell);
+   the text notes stay as the fallback */
+.pz-item { --pz-arrow: #b0394a; }
+.puzzle { position: relative; }
+.pz-arrows { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
+.pz-arrows path[stroke] { fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-dasharray: 1 5; opacity: .55; }
+.pz-arrows path[fill] { opacity: .5; }
+.pz-aimed .pz-target { display: none; }   /* the arrow says it; the note stays where no arrow could be drawn */
+/* a choice in progress (Impulse's four cards, Fact or Fiction's piles): its own band, label on the left */
+.pz-choice { display: grid; grid-template-columns: 7rem minmax(0, 1fr) 3.5rem; align-items: center; padding: .6rem .9rem;
+  border-top: 1px solid var(--rule); background: color-mix(in srgb, var(--island) 18%, var(--panel)); }
+.pz-choice > .pz-label { grid-column: 1; }
+.pz-choicecards { grid-column: 2; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .4rem; }
+.pz-pile-choice { display: flex; gap: .3rem; padding: .3rem; border: 1px dashed var(--rule); border-radius: 6px; }
+.pz-pile-choice + .pz-pile-choice { margin-left: .8rem; }
+.pz-storm { flex: none; display: inline-grid; justify-items: center; gap: .1rem; padding: .3rem .6rem .35rem; line-height: 1;
+  border: 1px solid color-mix(in srgb, var(--island) 45%, var(--rule)); border-radius: 8px; }
+.pz-phases { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; row-gap: .45rem; list-style: none; margin: 0; padding: 0; }
+.pz-phase { position: relative; padding: .2rem .28rem; margin-left: .4rem; border-radius: 4px; color: var(--ink-soft); font-size: .7rem; white-space: nowrap; }
+.pz-phase:first-child { margin-left: 0; }
+/* separators: a chevron between the steps of a phase, a short rule between phases */
+.pz-phase::before { content: "\203A"; position: absolute; left: -.42rem; top: 50%; transform: translateY(-62%); color: var(--ink-soft); opacity: .55; font-size: .85rem; }
+.pz-phase[data-start]::before { content: ""; left: -.28rem; width: 1px; height: 1.1rem; background: var(--rule); opacity: 1; transform: translateY(-50%); }
+.pz-phase:first-child::before { display: none; }
+.pz-phase.current { color: var(--paper); background: var(--island); font-weight: 600; }
+/* the arrow on the current phase points at the player whose turn it is */
+.pz-phase.current::after { content: ""; position: absolute; left: 50%; transform: translateX(-50%); border: .38rem solid transparent; }
+.pz-active-them .pz-phase.current::after { bottom: 100%; border-bottom-color: var(--island); }
+.pz-active-you .pz-phase.current::after { top: 100%; border-top-color: var(--island); }
+.pz-side { padding: .75rem .9rem; display: grid; gap: .6rem; }
+.pz-zones { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: start; }
+.pz-battlefield { display: grid; gap: .5rem; min-height: calc(var(--pz-card) * 1.4); }
+.pz-row, .pz-hand { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; min-height: calc(var(--pz-card) * 1.395); }
+.pz-row { justify-content: center; }
+/* your side is drawn from the bottom up, so your permanents sit next to you */
+.pz-you .pz-zones { align-items: end; }
+.pz-you .pz-battlefield { align-content: end; }
+/* identical lands stack in fours, fanning up and to the right; tapped stacks sit to the right */
+.puzzle { --pz-fan: .55rem; }
+.pz-stack { position: relative; display: inline-block; flex: none;
+  width: calc(var(--pz-card) + var(--pz-fan) * (var(--n) - 1)); height: calc(var(--pz-card) * 1.395 + var(--pz-fan) * (var(--n) - 1)); }
+.pz-stack-tapped { width: calc(var(--pz-card) * 1.395 + var(--pz-fan) * (var(--n) - 1)); height: calc(var(--pz-card) + var(--pz-fan) * (var(--n) - 1)); }
+.pz-stack[data-n="1"] { --n: 1; } .pz-stack[data-n="2"] { --n: 2; } .pz-stack[data-n="3"] { --n: 3; } .pz-stack[data-n="4"] { --n: 4; }
+.pz-stack > .pz-card { position: absolute; }
+.pz-stack > .pz-card:nth-child(1) { left: 0; bottom: 0; }
+.pz-stack > .pz-card:nth-child(2) { left: var(--pz-fan); bottom: var(--pz-fan); }
+.pz-stack > .pz-card:nth-child(3) { left: calc(var(--pz-fan) * 2); bottom: calc(var(--pz-fan) * 2); }
+.pz-stack > .pz-card:nth-child(4) { left: calc(var(--pz-fan) * 3); bottom: calc(var(--pz-fan) * 3); }
+/* phased out: a dashed outline and a tag, never a dimmed image */
+.pz-phased::before { content: ""; position: absolute; inset: -.3rem; border: 2px dashed var(--island); border-radius: 8px; }
+.pz-nametag { position: absolute; left: 50%; top: calc(100% + .2rem); transform: translateX(-50%); z-index: 2;
+  width: max-content; max-width: calc(var(--pz-card) * 1.25); text-align: center;
+  font: 600 .64rem/1.25 var(--sans); padding: .1rem .4rem; border-radius: .4rem; background: var(--ink); color: var(--paper); }
+.pz-row:has(.pz-nametag) { margin-bottom: 2rem; }
+.pz-phasetag { position: absolute; left: 50%; bottom: -.55rem; transform: translateX(-50%); white-space: nowrap;
+  font: 600 .7rem/1.5 var(--sans); padding: 0 .4rem; border-radius: 999px; background: var(--island); color: var(--paper); }
+/* attacking: a short, wide red arrow under the card, pointing at the player being attacked */
+.puzzle { --pz-attack: #8e2433; }
+:root[data-theme="dark"] .puzzle { --pz-attack: #b0394a; }
+.pz-attack { position: absolute; left: 50%; width: 38%; height: auto; color: var(--pz-attack); opacity: .8; }
+.pz-them .pz-attack { top: calc(100% + .1rem); transform: translateX(-50%); }
+.pz-you .pz-attack { bottom: calc(100% + .1rem); transform: translateX(-50%) rotate(180deg); }
+.pz-row:has(.pz-attacking) { margin-block: .45rem; }
+/* an aura sits behind the permanent it enchants, its top edge showing above it */
+.pz-attached { position: relative; display: inline-flex; flex: none; padding-top: calc(var(--pz-card) * .32); }
+.pz-aura { position: absolute; left: 0; top: 0; width: var(--pz-card); }
+.pz-aura img { display: block; width: 100%; height: auto; border-radius: 4.5% / 3.4%; box-shadow: var(--shadow); }
+.pz-attached > .pz-card { position: relative; }
+.pz-piles { display: grid; gap: .8rem; align-content: start; }
+.pz-library { display: grid; gap: .3rem; justify-items: start; }
+.pz-deck { position: relative; display: block; width: var(--pz-card); height: calc(var(--pz-card) * 1.395 + .5rem); }
+.pz-deck .pz-back { position: absolute; left: 0; width: var(--pz-card); height: auto; border-radius: 4.5% / 3.4%; box-shadow: var(--shadow); }
+.pz-deck .pz-back:nth-child(1) { top: .5rem; }
+.pz-deck .pz-back:nth-child(2) { top: .25rem; }
+.pz-deck .pz-back:nth-child(3) { top: 0; }
+.pz-count { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); min-width: 2rem; padding: 0 .4rem; height: 1.8rem;
+  border-radius: 999px; background: var(--ink); color: var(--paper); font: 700 1rem/1.8rem var(--sans); text-align: center; box-shadow: var(--shadow); }
+.pz-hand { justify-content: center; }
+/* the hand is its own band, a shade apart from the battlefield */
+.pz-handzone { display: grid; gap: .3rem; margin: 0 -.9rem; padding: .35rem .9rem;
+  background: color-mix(in srgb, var(--island) 14%, var(--paper)); }
+.pz-them .pz-handzone { margin-top: -.75rem; border-bottom: 1px solid var(--rule); }
+.pz-you .pz-handzone { margin-bottom: -.75rem; border-top: 1px solid var(--rule); }
+.pz-handzone { grid-template-columns: 6.5rem minmax(0, 1fr); align-items: center; }
+.pz-player { display: grid; gap: .1rem; color: var(--ink-soft); }
+.pz-player .pz-label { margin-top: .25rem; }
+.pz-name { font-weight: 700; color: var(--ink); }
+.pz-life b { color: var(--ink); font-size: 1.35rem; }
+.pz-graveyard { display: grid; gap: .3rem; justify-items: start; }
+/* cards revealed from the top of a library (a Portent, say): a small row under the library, top card first */
+.pz-revealed { display: grid; gap: .25rem; margin-top: .35rem; --pz-card: 3.2rem; }
+.pz-toprow { display: flex; gap: .3rem; }
+.pz-toprow .pz-eye { width: 1.1rem; height: 1.1rem; padding: .15rem; top: -.35rem; right: -.1rem; }
+.pz-label { font-size: .75rem; color: var(--ink-soft); }
+/* the graveyard: every card, in rows of six overlapping sideways; each row overlaps the one above, leaving
+   the top of the cards above (name and art) in view, and the top of the graveyard bottom right */
+.pz-pile { display: grid; gap: 0; align-content: start; }
+.pz-pilerow { display: flex; }
+.pz-pilerow .pz-card + .pz-card { margin-left: calc(var(--pz-card) * -.58); }
+.pz-pilerow + .pz-pilerow { margin-top: calc(var(--pz-card) * 1.395 * -.6); }
+.pz-empty { color: var(--ink-soft); font-style: italic; font-size: .8rem; }
+.pz-card { position: relative; display: inline-block; width: var(--pz-card); flex: none; }
+.pz-card img { display: block; width: 100%; height: auto; border-radius: 4.5% / 3.4%; box-shadow: var(--shadow); }
+.pz-tapped { width: calc(var(--pz-card) * 1.395); height: var(--pz-card); }
+.pz-tapped img { position: absolute; left: 50%; top: 50%; width: var(--pz-card); transform: translate(-50%, -50%) rotate(90deg); }
+.pz-counter { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); min-width: 1.6rem; height: 1.6rem;
+  border-radius: 999px; background: var(--ink); color: var(--paper); font: 700 .9rem/1.6rem var(--sans); text-align: center; box-shadow: var(--shadow); }
+.pz-eye { position: absolute; top: -.4rem; right: -.1rem; width: 1.5rem; height: 1.5rem; padding: .22rem;
+  border-radius: 999px; background: var(--paper); color: var(--island); border: 1.5px solid var(--island); box-shadow: var(--shadow); }
+/* the stack, bottom on the left and top on the right, slightly overlapping; a faint midline splits the table, and each item leans towards whoever put it there */
+.pz-stackzone { --pz-card: 5.2rem; --pz-lean: .7rem; position: relative; display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) 3.5rem;
+  align-items: center; padding: .3rem .9rem; border-top: 1px solid var(--rule); background: color-mix(in srgb, var(--island) 7%, var(--panel)); }
+.pz-stackitems::before { content: ""; position: absolute; left: -100vw; right: -100vw; top: 50%; border-top: 1px dashed color-mix(in srgb, var(--ink-soft) 55%, transparent); }
+.pz-stackitems { position: relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5rem 0;
+  list-style: none; margin: 0; padding: var(--pz-lean) 0; }
+/* room for the target notes, only when there are some */
+.pz-has-targets .pz-stackitems { padding: calc(var(--pz-lean) + 2.4rem) 0; }
+.pz-item { position: relative; display: grid; justify-items: center; }
+.pz-item + .pz-item { margin-left: calc(var(--pz-card) * -.22); }
+.pz-by-them { transform: translateY(calc(var(--pz-lean) * -1)); }
+.pz-by-you { transform: translateY(var(--pz-lean)); }
+.pz-item:last-child .pz-card img, .pz-item:last-child .pz-abil { outline: 2px solid var(--island); outline-offset: 2px; }
+/* an ability: the text beside the source's art (Scryfall's art crop, untouched); the art sits on the right,
+   where the next item on the stack overlaps it */
+.pz-abil { display: grid; grid-template-columns: minmax(0, 1fr) 40%; grid-template-rows: auto 1fr; align-content: start; gap: .15rem .35rem;
+  width: calc(var(--pz-card) * 1.9); height: calc(var(--pz-card) * 1.395); overflow: hidden;
+  padding: .25rem; border-radius: 6px; background: var(--paper); border: 1px solid var(--rule); box-shadow: var(--shadow); box-sizing: border-box; flex: none; }
+.pz-art { display: block; grid-column: 2; grid-row: 1 / span 2; width: 100%; height: auto; border-radius: 3px; }
+.pz-abil-name { font: 700 .66rem/1.2 var(--sans); color: var(--ink); }
+.pz-abil-head { display: grid; gap: .05rem; grid-column: 1; grid-row: 1; }
+.pz-abil-text { grid-column: 1; }
+.pz-abil-kind { font: italic 400 .6rem/1.2 var(--sans); color: var(--ink-soft); }
+.pz-abil-text { font: 400 .64rem/1.3 var(--sans); color: var(--ink);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 7; line-clamp: 7; overflow: hidden; }
+.pz-stackzone > .pz-label { justify-self: start; position: relative; z-index: 1; padding: .1rem .3rem; border-radius: 4px;
+  background: color-mix(in srgb, var(--island) 7%, var(--panel)); }
+.pz-target { position: absolute; top: calc(100% + .3rem); left: 0; line-height: 1.25; width: calc(var(--pz-card) * .78); text-align: left; font-size: .7rem; color: var(--ink-soft); }
+/* a target note sits on the side of its player, clear of neighbours leaning the other way */
+.pz-by-them .pz-target { top: auto; bottom: calc(100% + .3rem); }
+.pz-answer { margin: 1rem 0 2.5rem; border: 1px solid var(--rule); border-radius: 8px; padding: .6rem 1rem; }
+.pz-answer > summary { cursor: pointer; font: 600 .95rem/1.4 var(--sans); color: var(--island); }
+.pz-answer[open] > summary { margin-bottom: .5rem; }
+@media (max-width: 640px) {
+  .puzzle { --pz-card: 3.4rem; }
+  .pz-stackzone { --pz-card: 5rem; --pz-lean: .6rem; }
+  .pz-abil-text { font-size: .6rem; }
+  .pz-stackzone, .pz-choice { grid-template-columns: 2.6rem minmax(0, 1fr) 0; padding-inline: .5rem; }
+  .pz-handzone { grid-template-columns: 1fr; }
+  .pz-piles { grid-auto-flow: column; justify-content: start; gap: 1.5rem; }
+  .pz-zones { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ---------- print ---------- */
+@media print {
+  .pdf-link { display: none; }
+  :root, :root[data-theme="dark"] {
+    --paper: #fff; --ink: #000; --ink-soft: #444; --rule: #bbb; --island: #000; --island-tint: #f2f2f2; --panel: #f2f2f2; --shadow: none;
+    color-scheme: light;
+  }
+  @page { margin: 18mm 16mm; }
+  html { font-size: 9pt; }
+  body { font-size: 1.15rem; line-height: 1.5; }
+  .shell { display: block; }
+  .toc, .topbar, .theme-toggle, .pdf-button, .repo-button, dialog { display: none !important; }
+  main { padding: 0; }
+  .pz-answer > summary { display: none; }
+  details.pz-answer::details-content { content-visibility: visible; display: block; }
+  details.pz-answer { break-before: page; }   /* the answer starts a new page, so the board can be solved first */
+  .puzzle { break-inside: avoid; --pz-card: 3.5rem; margin: .6rem 0 0; }
+  .pz-stackzone { --pz-card: 5rem; padding: .2rem .9rem; }
+  .pz-stackitems, .pz-has-targets .pz-stackitems { padding: .9rem 0; }
+  .hero-art { width: 40%; }
+  .hero-art img { box-shadow: none; }
+  .page, .prose { max-width: none; }
+  .prose { padding-inline: 3px; }   /* full-width boxes would otherwise lose their right border to the page's clip */
+  .margin-card { width: 30%; margin: .2rem 0 .6rem 1rem; }
+  .cardrow, .hand, .combo, .deck, .sbrow, .margin-card, table, tr { break-inside: avoid; }
+  h2 { break-before: page; margin-top: 0; border-top: 0; padding-top: 0; }
+  header.title + h2 { break-before: auto; margin-top: 3rem; }
+  header.title { margin-bottom: 0; }
+  h2, h3 { break-after: avoid; }
+  a, a.cardref { color: inherit; text-decoration: none; }
+  .anchor, .edit { display: none; }
+  .print-toc { display: block; break-after: page; font: 400 9pt/1.35 var(--sans); }
+  .print-toc-title { font: 650 16pt/1.2 var(--serif); margin: 2rem 0 1rem; }
+  .print-toc ol { list-style: none; padding: 0; margin: 0; }
+  .print-toc > ol { columns: 2; column-gap: 2rem; }
+  .print-toc > ol > li { break-inside: avoid; margin: 0 0 .5rem; font-weight: 600; }
+  .print-toc ol ol { font-weight: 400; padding-left: .9rem; margin-top: .15rem; }
+  .print-toc ol ol li { margin: 0 0 .1rem; }
+  .confidential-print { display: block; position: fixed; bottom: 0; left: 0; right: 0; text-align: center; font: 600 8pt/1 var(--sans); color: #8a1c2c; }
+  .peek { display: none; }
+  img.mtg { cursor: default; }
+}

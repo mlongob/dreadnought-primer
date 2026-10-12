@@ -1,0 +1,23 @@
+[project]
+name = "stiflenought-primer"
+version = "0.1.0"
+description = "Mono-U Stiflenought, a Premodern primer: content and site build"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = ["markdown>=3.5", "jinja2>=3.1", "pikepdf>=9", "Pillow>=10", "websocket-client>=1.6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["builder"]
+
+[tool.setuptools.package-data]
+builder = ["templates/*", "static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

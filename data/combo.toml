@@ -1,0 +1,19 @@
+# The combo figure at the top of the primer ({combo}). Step titles are the bold lead-ins.
+caption = "The whole deck is in this picture. Eight enablers for four Dreadnoughts; the other 48 cards find the pieces and protect the turn."
+
+[[steps]]
+card = "Phyrexian Dreadnought"
+title = "Cast it"
+text = "For one mana. Its trigger — sacrifice it unless you sacrifice creatures with twelve power — goes on the stack. Everything happens while that trigger is waiting to resolve."
+
+[[steps]]
+join = "then"
+card = "Stifle"
+title = "Stifle the trigger"
+text = "It is countered, and the Dreadnought simply stays: a 12/12 trampler for two mana."
+
+[[steps]]
+join = "or"
+card = "Vision Charm"
+title = "Charm the Dreadnought"
+text = "It phases out, the trigger resolves on nothing, and it phases back in at your next untap step, untriggered — the same 12/12, with the Charm doubling as protection against removal cast in response."

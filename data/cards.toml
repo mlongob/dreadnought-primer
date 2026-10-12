@@ -1,0 +1,1830 @@
+# Card register: every card the primer shows or links.
+# Printing: the author's pins for the 75; otherwise first printing, non-foil, Beta over Alpha.
+# Add cards with: python tools/add_card.py "Card Name"
+
+# Card names that are also deck names. Never linked automatically; write [Stasis]{Stasis} for the card.
+deck_names = ["Aluren", "Opposition", "Replenish", "Stasis"]
+
+[aliases]
+Dreadnought = "Phyrexian Dreadnought"
+Charm = "Vision Charm"
+Keg = "Powder Keg"
+Freeze = "Brain Freeze"
+Flash = "Flash of Insight"
+Chain = "Chain of Vapor"
+Flare = "Essence Flare"
+B2B = "Back to Basics"
+BEB = "Blue Elemental Blast"
+Swords = "Swords to Plowshares"
+Deed = "Pernicious Deed"
+# Short forms the text uses that always mean one card.
+Mage = "Meddling Mage"
+Mox = "Mox Diamond"
+Specter = "Hypnotic Specter"
+Web = "Tsabo's Web"
+Factory = "Mishra's Factory"
+Therapy = "Cabal Therapy"
+Lackey = "Goblin Lackey"
+Blessing = "Gaea's Blessing"
+Dryad = "Quirion Dryad"
+Vigilante = "Nantuko Vigilante"
+Port = "Rishadan Port"
+Shapeshifter = "Volrath's Shapeshifter"
+Vise = "Black Vise"
+Confinement = "Solitary Confinement"
+Orangutan = "Uktabi Orangutan"
+Swarm = "Xantid Swarm"
+Wretch = "Withered Wretch"
+Altar = "Altar of Dementia"
+Pup = "Jackal Pup"
+Negator = "Phyrexian Negator"
+Pillar = "Pyrostatic Pillar"
+Symbiote = "Wirewood Symbiote"
+Warchief = "Goblin Warchief"
+Lavamancer = "Grim Lavamancer"
+Shade = "Nantuko Shade"
+Library = "Sylvan Library"
+Mongrel = "Wild Mongrel"
+Rootwalla = "Basking Rootwalla"
+Piledriver = "Goblin Piledriver"
+Presence = "Enchantress's Presence"
+Bridge = "Ensnaring Bridge"
+Matron = "Goblin Matron"
+Ringleader = "Goblin Ringleader"
+Gibbons = "Hidden Gibbons"
+Bolt = "Lightning Bolt"
+Petal = "Lotus Petal"
+Fanatic = "Mogg Fanatic"
+Nightmare = "Recurring Nightmare"
+Squee = "Squee, Goblin Nabob"
+Ghoul = "Sutured Ghoul"
+Elder = "Yavimaya Elder"
+Treetop = "Treetop Village"
+Furnace = "Phyrexian Furnace"
+Grid = "Defense Grid"
+Arena = "Phyrexian Arena"
+Akroma = "Akroma, Angel of Wrath"
+Tusker = "Krosan Tusker"
+Baloth = "Ravenous Baloth"
+Rofellos = "Rofellos, Llanowar Emissary"
+Helm = "Helm of Awakening"
+Drake = "Gilded Drake"
+Chant = "Orim's Chant"
+Vortex = "Sulfuric Vortex"
+Wrath = "Wrath of God"
+Mother = "Mother of Runes"
+Wave = "Parallax Wave"
+Strand = "Flooded Strand"
+Delta = "Polluted Delta"
+Heath = "Windswept Heath"
+Leak = "Mana Leak"
+Tomb = "Ancient Tomb"
+Tinkerer = "Goblin Tinkerer"
+# Generic "Edict" means Diabolic Edict (the author's call).
+Edict = "Diabolic Edict"
+"Fire/Ice" = "Fire // Ice"
+
+[cards."Abeyance"]
+id = "125a355d-bfcf-4125-aa6c-35e7dea6f63e"
+set = "wth"
+number = "1"
+
+[cards."Absorb"]
+id = "5d6a0f3e-457f-41f5-be26-5fb249874f1a"
+set = "inv"
+number = "226"
+
+[cards."Accumulated Knowledge"]
+id = "ab061406-38f4-40e7-a9ea-e3cbcaabc127"
+set = "nem"
+number = "26"
+
+[cards."Adarkar Wastes"]
+id = "09dd9023-f7ee-4e99-8821-7059deb83730"
+set = "ice"
+number = "351"
+
+[cards."Akroma, Angel of Wrath"]
+id = "814245de-6105-43ef-acbf-d12d304b6331"
+set = "lgn"
+number = "1"
+
+[cards."Altar of Dementia"]
+id = "4f2da99f-3c53-4980-97d6-2158c765aac0"
+set = "tmp"
+number = "276"
+
+[cards."Aluren"]
+id = "268403bc-733d-446e-a7c1-abc957c42bc2"
+set = "tmp"
+number = "213"
+
+[cards."Anarchy"]
+id = "28d941da-b5cb-4b7e-84f2-ece883f89af3"
+set = "ice"
+number = "170"
+
+[cards."Ancient Tomb"]
+id = "30e401e3-282b-4524-87e1-c6cd50cd6d00"
+set = "tmp"
+number = "315"
+
+[cards."Annul"]
+id = "3f8c73ff-be92-41ca-93a7-76f9823adb38"
+set = "usg"
+number = "59"
+
+[cards."Aquamoeba"]
+id = "1243552a-ca57-42ce-817e-d6268fc673e0"
+set = "tor"
+number = "24"
+
+[cards."Arcane Denial"]
+id = "b0c5728e-43e7-417a-ba18-5038345cec67"
+set = "all"
+number = "22a"
+
+[cards."Arcane Laboratory"]
+id = "2f4a88e8-aab0-488a-a0b8-fa3feedbf278"
+set = "usg"
+number = "60"
+
+[cards."Argothian Enchantress"]
+id = "9ababc1a-515e-4e20-8819-19d84d9b0af5"
+set = "usg"
+number = "234"
+
+[cards."Armageddon"]
+id = "02c4edfa-7822-40bc-88d1-d051b3a64df1"
+set = "leb"
+number = "2"
+
+[cards."Arrogant Wurm"]
+id = "11b849c7-c91d-4c67-a357-f7d17f9b187a"
+set = "tor"
+number = "120"
+
+[cards."Attrition"]
+id = "e3eb615b-249d-433f-a521-8310e8784b5d"
+set = "uds"
+number = "52"
+
+[cards."Attunement"]
+id = "f6723528-8b2c-4beb-a465-800300faf158"
+set = "usg"
+number = "61"
+
+[cards."Aura Shards"]
+id = "df4039ef-af72-4267-ade9-fdb7c921279e"
+set = "inv"
+number = "233"
+
+[cards."Aura of Silence"]
+id = "57e6c366-b8c7-4f66-b8e1-82dc69c0081c"
+set = "wth"
+number = "7"
+
+[cards."Back to Basics"]
+id = "fab4cd7e-b56f-4408-a0e9-c07e040cc38f"
+set = "usg"
+number = "62"
+
+[cards."Ball Lightning"]
+id = "c1ba83ab-83f5-421d-bba1-0f925870b5c8"
+set = "drk"
+number = "57"
+
+[cards."Basking Rootwalla"]
+id = "1a67768a-6cd9-4163-b941-752f29c87a8d"
+set = "tor"
+number = "121"
+
+[cards."Birds of Paradise"]
+id = "852d7a68-8682-4073-a44b-f10f5613879c"
+set = "leb"
+number = "187"
+
+[cards."Black Vise"]
+id = "d234f3d7-2f15-4fbf-92db-16c3433d644b"
+set = "leb"
+number = "234"
+
+[cards."Blastoderm"]
+id = "9db5d6c2-b11f-442a-b172-c0c99c9bec07"
+set = "nem"
+number = "102"
+
+[cards."Blue Elemental Blast"]
+id = "7f07e272-6cc7-46d6-ad5c-473d1021c179"
+set = "leb"
+number = "50"
+
+[cards."Boil"]
+id = "2fa1c529-44e5-41b6-9704-ae2319f31f13"
+set = "tmp"
+number = "165"
+
+[cards."Boomerang"]
+id = "b8286edd-644b-4135-8dca-af97f3920de3"
+set = "leg"
+number = "48"
+
+[cards."Brain Freeze"]
+id = "59a43ef5-08f0-44fc-802d-b6cfd56b7d1f"
+set = "scg"
+number = "29"
+
+[cards."Cabal Therapy"]
+id = "0a5df970-c6ba-4824-b8ba-67244aec2b82"
+set = "jud"
+number = "62"
+
+[cards."Call of the Herd"]
+id = "429a88cc-53db-4c5e-a061-f0f49a38c675"
+set = "ody"
+number = "231"
+
+[cards."Capsize"]
+id = "e538b359-d893-422d-9d60-5f3e8ee0fa9e"
+set = "tmp"
+number = "55"
+
+[cards."Careful Study"]
+id = "dea15b53-2940-40e7-8d48-8ec11341da83"
+set = "ody"
+number = "70"
+
+[cards."Carnophage"]
+id = "d17c057f-cb1b-4895-831a-fb35c75d3845"
+set = "exo"
+number = "53"
+
+[cards."Carpet of Flowers"]
+id = "93abb48a-85f2-432d-8602-0a1d17fbb409"
+set = "usg"
+number = "240"
+
+[cards."Cavern Harpy"]
+id = "adfb0804-50d6-4bca-8733-72e01030a543"
+set = "pls"
+number = "97"
+
+[cards."Chain of Vapor"]
+id = "30f6b4a2-5780-46e9-b239-459d2cf37743"
+set = "ons"
+number = "73"
+
+[cards."Chainer's Edict"]
+id = "014af391-3b4a-4aab-a3e9-f60e61016985"
+set = "tor"
+number = "57"
+
+[cards."Chastise"]
+id = "1169dab7-8f4c-474d-9289-42765a275376"
+set = "jud"
+number = "8"
+
+[cards."Chill"]
+id = "5a7bd777-6f11-441e-887f-9cee1ef96035"
+set = "tmp"
+number = "56"
+
+[cards."Choke"]
+id = "e2f85205-3c4f-4411-b09c-d1271be56dde"
+set = "tmp"
+number = "219"
+
+[cards."Chromatic Sphere"]
+id = "920cd17f-9274-443e-906f-c9904f0658d5"
+set = "inv"
+number = "299"
+
+[cards."Circle of Protection: Artifacts"]
+id = "22ebd5a3-fef8-4097-b038-89a6cb38227d"
+set = "atq"
+number = "4"
+
+[cards."Circular Logic"]
+id = "cd9198d6-201d-4175-8f70-eef92d7d5bb5"
+set = "tor"
+number = "33"
+
+[cards."City of Brass"]
+id = "f4e32327-380d-471e-813b-4c27477787ce"
+set = "arn"
+number = "71"
+
+[cards."City of Solitude"]
+id = "be499b81-bb2d-4f1d-9deb-c8bfcdca8e13"
+set = "vis"
+number = "102"
+
+[cards."City of Traitors"]
+id = "a7a8b6b8-b95f-4014-b17a-a6d44d965995"
+set = "exo"
+number = "143"
+
+[cards."Cloud of Faeries"]
+id = "4e76d04a-0038-4b5b-a026-3056ee940da9"
+set = "ulg"
+number = "29"
+
+[cards."Control Magic"]
+id = "133315bd-3c46-4eff-938e-4dba63631c1b"
+set = "leb"
+number = "53"
+
+[cards."Counterspell"]
+id = "dacdd380-71cf-4832-bd02-3697501325f3"
+set = "tmp"
+number = "57"
+
+[cards."Crumble"]
+id = "d2101f86-8d3c-4ba8-ac42-bd3df0644280"
+set = "atq"
+number = "32"
+
+[cards."Crystal Vein"]
+id = "1afb6e29-058e-44c5-a3fa-56c462f070a0"
+set = "mir"
+number = "325"
+
+[cards."Cursed Scroll"]
+id = "31415b9b-fb30-4132-a9a3-795b4573a901"
+set = "tmp"
+number = "281"
+
+[cards."Cursed Totem"]
+id = "cc99ee76-45b6-4f1d-b0b0-7da8775ca90c"
+set = "mir"
+number = "299"
+
+[cards."Dark Banishing"]
+id = "f7dc2716-ed62-4797-ad2b-227eca5408d0"
+set = "ice"
+number = "119"
+
+[cards."Dark Ritual"]
+id = "0690f724-eb95-416b-b064-f1239e2a30e8"
+set = "leb"
+number = "99"
+
+[cards."Daze"]
+id = "d03bff25-0d5e-4dcf-8d75-6df846afea3b"
+set = "nem"
+number = "30"
+
+[cards."Decree of Justice"]
+id = "5e8a7e5c-f252-4de8-94d7-e7327210bf26"
+set = "scg"
+number = "8"
+
+[cards."Decree of Silence"]
+id = "f2fc46e2-5e19-4999-a4cd-1e84697066c1"
+set = "scg"
+number = "32"
+
+[cards."Deep Analysis"]
+id = "01e3c2e9-d8df-4a7a-be86-7be8c6254fa2"
+set = "tor"
+number = "36"
+
+[cards."Defense Grid"]
+id = "5c2592c9-7e64-40c1-a9cb-c0994094a1e0"
+set = "ulg"
+number = "125"
+
+[cards."Deranged Hermit"]
+id = "bf0e94c9-61c4-4cc0-b5ce-db62bc2660ee"
+set = "ulg"
+number = "101"
+
+[cards."Diabolic Edict"]
+id = "a2ecf2ee-1e2d-4ab2-8b2c-717c794b09b2"
+set = "tmp"
+number = "128"
+
+[cards."Disenchant"]
+id = "9d61d0a5-7e92-4413-9121-925e1876b64d"
+set = "leb"
+number = "19"
+
+[cards."Dominate"]
+id = "63b2dcb1-8c3e-434c-865a-196d4d799706"
+set = "nem"
+number = "31"
+
+[cards."Dragon Breath"]
+id = "1832aaed-e164-4f78-9bc9-ec6c015835f5"
+set = "scg"
+number = "86"
+
+[cards."Duress"]
+id = "ca367f49-0f4a-4b7f-8104-851893fbcd8a"
+set = "usg"
+number = "132"
+
+[cards."Dust Bowl"]
+id = "75b03c30-c2b8-4207-b675-26c59c40a7e5"
+set = "mmq"
+number = "316"
+
+[cards."Earthquake"]
+id = "86435875-ac92-4348-b41e-19570cf62a1c"
+set = "leb"
+number = "147"
+
+[cards."Elephant Grass"]
+id = "f4c1f5a7-0d28-43ab-9b66-937e963f42cd"
+set = "vis"
+number = "104"
+
+[cards."Elvish Spirit Guide"]
+id = "5b94f37f-ebdf-4b79-a615-58331d27cf4e"
+set = "all"
+number = "89"
+
+[cards."Enchantress's Presence"]
+id = "75def198-99d6-4b0a-8878-5151f44bc0a4"
+set = "ons"
+number = "261"
+
+[cards."Engineered Plague"]
+id = "27e158d5-efb2-4f90-8898-60ede98f7d29"
+set = "ulg"
+number = "51"
+
+[cards."Enlightened Tutor"]
+id = "cbac1d27-15e2-4e2f-82ab-625a16e096cb"
+set = "mir"
+number = "14"
+
+[cards."Ensnaring Bridge"]
+id = "27d838a1-2739-45f7-a856-6202334fa76a"
+set = "sth"
+number = "133"
+
+[cards."Eradicate"]
+id = "0fad4607-c11d-4407-b5fa-bd34f74e41b3"
+set = "uds"
+number = "60"
+
+[cards."Essence Flare"]
+id = "13ebb5dd-d7f1-4b06-8585-7004045be542"
+set = "ice"
+number = "69"
+
+[cards."Eternal Dragon"]
+id = "0596928c-2b20-4dbb-aa78-3ab6c3ce0d72"
+set = "scg"
+number = "12"
+
+[cards."Exalted Angel"]
+id = "c2213eac-cea4-4dfd-90c4-c1f466967e2e"
+set = "ons"
+number = "28"
+
+[cards."Exhume"]
+id = "a88b23ce-ce19-47da-b9f2-055a4d6bdc79"
+set = "usg"
+number = "134"
+
+[cards."Exile"]
+id = "108b85ff-ed03-4b3e-872f-1cad1a27b930"
+set = "all"
+number = "3"
+
+[cards."Fact or Fiction"]
+id = "7fd4d018-dcf3-4439-8445-02d66e44f7d3"
+set = "inv"
+number = "57"
+
+[cards."Faerie Conclave"]
+id = "ae3ede87-b026-4781-81ab-8652664f8e41"
+set = "ulg"
+number = "139"
+
+[cards."Fire // Ice"]
+id = "f98f4538-5b5b-475d-b98f-49d01dae6f04"
+set = "apc"
+number = "128"
+
+[cards."Fireblast"]
+id = "b1eb5b2c-1f02-48a6-a287-88eb189d6780"
+set = "vis"
+number = "79"
+
+[cards."Flash of Insight"]
+id = "ffaab905-0b97-42c2-a1a3-1e72275caa82"
+set = "jud"
+number = "40"
+
+[cards."Fling"]
+id = "6b144452-2e91-4e46-abe9-ed76b39f8314"
+set = "sth"
+number = "82"
+
+[cards."Flooded Strand"]
+id = "b4e3d844-d3b4-41d8-921d-c1cb3af343f8"
+set = "ons"
+number = "316"
+
+[cards."Foil"]
+id = "870fb793-3107-4cb2-ba78-34fbf5c9da2f"
+set = "pcy"
+number = "34"
+
+[cards."Force Spike"]
+id = "70e64028-ae96-4950-aa6c-9d347409fad3"
+set = "leg"
+number = "58"
+
+[cards."Forsaken City"]
+id = "676703fe-bd80-413c-8704-1da5d3248b7e"
+set = "pls"
+number = "139"
+
+[cards."Frantic Search"]
+id = "1904db14-6df7-424f-afa5-e3dfab31300a"
+set = "ulg"
+number = "32"
+
+[cards."Gaea's Blessing"]
+id = "ee83d511-57e0-40fb-a4db-62f6c2c39888"
+set = "wth"
+number = "129"
+
+[cards."Gaea's Cradle"]
+id = "25b0b816-0583-44aa-9dc5-f3ff48993a51"
+set = "usg"
+number = "321"
+
+[cards."Gempalm Incinerator"]
+id = "2687c311-fd0c-4fe0-bce8-e3f412216796"
+set = "lgn"
+number = "94"
+
+[cards."Gemstone Mine"]
+id = "09507f7f-c58f-4f57-b878-b39811a5b619"
+set = "wth"
+number = "164"
+
+[cards."Genesis"]
+id = "b43aee5e-b12e-43ea-9fae-16310acdc640"
+set = "jud"
+number = "117"
+
+[cards."Gerrard's Verdict"]
+id = "583740c0-68cf-4205-b682-2f97c0880d42"
+set = "apc"
+number = "102"
+
+[cards."Gilded Drake"]
+id = "8de3fdae-cc2c-4a14-b15b-4fe1a983dfbf"
+set = "usg"
+number = "76"
+
+[cards."Goblin Cadets"]
+id = "60081115-16bc-4924-b76d-7cfc0ad2287c"
+set = "usg"
+number = "189"
+
+[cards."Goblin Lackey"]
+id = "9b848caa-aad8-4060-8f86-304a8556de2d"
+set = "usg"
+number = "190"
+
+[cards."Goblin Matron"]
+id = "f99dc21c-8600-49bf-b0a3-c981f7ec7ac3"
+set = "p02"
+number = "100"
+
+[cards."Goblin Patrol"]
+id = "d0fcd8d3-f159-49a1-8dd9-582ae4a0adc3"
+set = "usg"
+number = "193"
+
+[cards."Goblin Piledriver"]
+id = "f6c4df1f-f148-42ec-8e22-e7114216927d"
+set = "ons"
+number = "205"
+
+[cards."Goblin Ringleader"]
+id = "b6b2cd77-9552-48b1-80cb-26966323c1ea"
+set = "apc"
+number = "62"
+
+[cards."Goblin Tinkerer"]
+id = "e6529852-8b3e-4a70-a4a1-029e012231c6"
+set = "mir"
+number = "180"
+
+[cards."Goblin Warchief"]
+id = "66864a4b-8924-40ef-a337-15b12413a158"
+set = "scg"
+number = "97"
+
+[cards."Goblin Welder"]
+id = "6171e136-1167-4329-acb2-6853d3a814e5"
+set = "ulg"
+number = "80"
+
+[cards."Graveborn Muse"]
+id = "aa432e4e-ff23-4ad2-8d0a-403efee86f11"
+set = "lgn"
+number = "73"
+
+[cards."Grim Lavamancer"]
+id = "5dd72697-24be-42c7-a6d9-a837bdbd4662"
+set = "tor"
+number = "100"
+
+[cards."Gush"]
+id = "e755bbef-bf34-49c0-ae72-d70e3599de52"
+set = "mmq"
+number = "82"
+
+[cards."Helm of Awakening"]
+id = "41bba882-39b8-42db-9a01-54c6712b8019"
+set = "vis"
+number = "145"
+
+[cards."Hermit Druid"]
+id = "3efc0622-ac2c-4722-ba05-961cc98c5940"
+set = "sth"
+number = "108"
+
+[cards."Hibernation"]
+id = "68b7444c-fabb-4437-8db9-a1008ea09415"
+set = "usg"
+number = "79"
+
+[cards."Hidden Gibbons"]
+id = "8f94da51-b4d9-4d79-9113-39f8f4a1be34"
+set = "ulg"
+number = "104"
+
+[cards."Hoodwink"]
+id = "8d505fbb-ec85-475b-a0e1-6670627ec017"
+set = "mmq"
+number = "84"
+
+[cards."Hull Breach"]
+id = "6907fa19-29ed-4319-8835-68f424c92831"
+set = "pls"
+number = "111"
+
+[cards."Humility"]
+id = "a2fb7128-806b-4148-80fe-eb967f248021"
+set = "tmp"
+number = "24"
+
+[cards."Hydroblast"]
+id = "f62716f0-fde2-49ef-b8a4-c1b03f451194"
+set = "ice"
+number = "72"
+
+[cards."Hypnotic Specter"]
+id = "edcc56a0-1dc0-4261-8f9c-5a88ce83f9e9"
+set = "leb"
+number = "113"
+
+[cards."Impulse"]
+id = "9d710a97-062f-4773-b6c6-8aeddeb3b6e8"
+set = "vis"
+number = "34"
+
+[cards."Incinerate"]
+id = "9c3f00af-010d-4485-b8b7-47400d99c496"
+set = "ice"
+number = "194"
+
+[cards."Innocent Blood"]
+id = "d26af8f6-df64-4027-880c-f2fae2d8103f"
+set = "ody"
+number = "145"
+
+[cards."Intuition"]
+id = "c99f6785-e5a1-4fdc-9fb5-e1a372e7e848"
+set = "tmp"
+number = "70"
+
+[cards."Island"]
+id = "a39fc1e0-caf0-4cfa-bbf2-fea7ca32c00d"
+set = "mir"
+number = "338"
+
+[cards."Ivory Tower"]
+id = "a5f23039-45ca-4c15-af50-bfd40ea26453"
+set = "atq"
+number = "53"
+
+[cards."Jackal Pup"]
+id = "3707ab74-9aec-4d30-86e0-ffa5f72d5b4f"
+set = "tmp"
+number = "183"
+
+[cards."Karmic Guide"]
+id = "77d23045-905b-44cb-9af9-cc6ad717477d"
+set = "ulg"
+number = "11"
+
+[cards."Keeper of the Dead"]
+id = "6b641171-35bc-4945-ada9-3ea28ea9fabf"
+set = "exo"
+number = "65"
+
+[cards."Knight of Stromgald"]
+id = "2b87069b-ebaf-4705-b5da-446932af9b73"
+set = "ice"
+number = "138"
+
+[cards."Kor Haven"]
+id = "3d5529ca-5c20-4dfd-8595-96d6dfa6debe"
+set = "nem"
+number = "141"
+
+[cards."Krosan Cloudscraper"]
+id = "51ef4cda-e55b-45a8-9c02-4e77e5b15a9e"
+set = "lgn"
+number = "130"
+
+[cards."Krosan Reclamation"]
+id = "5b3c5144-7e15-46c6-b819-d729ecb30bb1"
+set = "jud"
+number = "122"
+
+[cards."Krosan Tusker"]
+id = "0b872f85-60c5-44c4-956d-a8aa8132908b"
+set = "ons"
+number = "272"
+
+[cards."Lightning Bolt"]
+id = "b5d3dcab-2260-479d-9ef6-dfb92d4f6061"
+set = "leb"
+number = "162"
+
+[cards."Llanowar Elves"]
+id = "abd80204-e9ba-483f-9b75-a69712545ba9"
+set = "leb"
+number = "211"
+
+[cards."Lotus Petal"]
+id = "6c877da3-68fa-41d0-8a24-8c79fcd8ecc1"
+set = "tmp"
+number = "294"
+
+[cards."Magus of the Unseen"]
+id = "86da04e9-b94d-42af-add3-02baf772bd33"
+set = "ice"
+number = "82"
+
+[cards."Man-o'-War"]
+id = "4dbf9bf9-75cd-4b25-a3a1-43b7e029700b"
+set = "vis"
+number = "37"
+
+[cards."Mana Leak"]
+id = "abcaf16d-aa02-43e2-aa38-bb1835d47a05"
+set = "sth"
+number = "36"
+
+[cards."Mana Short"]
+id = "4da4f9a8-024b-4707-b300-ccb11bd87cea"
+set = "leb"
+number = "66"
+
+[cards."Masticore"]
+id = "908a2215-7231-43a4-8fec-5d1e4233c028"
+set = "uds"
+number = "134"
+
+[cards."Meddling Mage"]
+id = "176f84c6-aa5e-449c-bd2b-cc91a898f0c7"
+set = "pls"
+number = "116"
+
+[cards."Meditate"]
+id = "edb79a97-c1fc-4aa3-bb13-3d24a6dabeea"
+set = "tmp"
+number = "76"
+
+[cards."Meltdown"]
+id = "9e7a967a-35a0-4e5c-a32b-123a9cfdb79e"
+set = "usg"
+number = "203"
+
+[cards."Memory Lapse"]
+id = "3d2cc591-3a81-468a-91a4-3c3aac83a21a"
+set = "hml"
+number = "32a"
+
+[cards."Merchant Scroll"]
+id = "d4133ceb-6176-411a-9eb8-51721c1bb435"
+set = "hml"
+number = "33"
+
+[cards."Mind Stone"]
+id = "162e81d3-6cd4-4cb8-8ed8-cfbd8d34ca71"
+set = "wth"
+number = "153"
+
+[cards."Mind's Desire"]
+id = "3c7474e1-cfae-4867-a11a-d5cf9ff7ea5f"
+set = "scg"
+number = "41"
+
+[cards."Mirri's Guile"]
+id = "73d51a3c-95c0-4810-b847-4b8afd12fd64"
+set = "tmp"
+number = "236"
+
+[cards."Misdirection"]
+id = "581ad59c-29e9-4498-a6fd-33bf21e8e7c4"
+set = "mmq"
+number = "87"
+
+[cards."Mishra's Factory"]
+id = "a696c5b6-f216-454d-8029-74e84bbd1428"
+set = "atq"
+number = "80a"
+
+[cards."Mogg Fanatic"]
+id = "ca2ecfd4-c874-4468-8601-87aa110d5a00"
+set = "tmp"
+number = "190"
+
+[cards."Mogg Salvage"]
+id = "403aa48c-b684-4c54-8863-460958055a1f"
+set = "nem"
+number = "94"
+
+[cards."Mother of Runes"]
+id = "0b1a46ab-95cb-4c24-924f-fc2afd4fcac7"
+set = "ulg"
+number = "14"
+
+[cards."Mox Diamond"]
+id = "28028830-83ed-45e2-b495-3b9ad9d3e988"
+set = "sth"
+number = "138"
+
+[cards."Nantuko Shade"]
+id = "2ed9dc9c-b92b-4305-8c54-1a63f750f8d1"
+set = "tor"
+number = "74"
+
+[cards."Nantuko Vigilante"]
+id = "e7474849-a6b4-4f3b-a836-37b88c26047b"
+set = "lgn"
+number = "132"
+
+[cards."Naturalize"]
+id = "c0acc41f-b55b-47cb-8803-d39d72788799"
+set = "ons"
+number = "275"
+
+[cards."Nether Spirit"]
+id = "220217c5-408c-40df-8133-da16b13d4f21"
+set = "mmq"
+number = "149"
+
+[cards."Nevinyrral's Disk"]
+id = "dbb21f21-668a-4d57-8d05-8db11fb82d99"
+set = "leb"
+number = "267"
+
+[cards."Nimble Mongoose"]
+id = "99e5ecf5-a662-4df0-a6ba-9177c62b6503"
+set = "ody"
+number = "258"
+
+[cards."Null Rod"]
+id = "bc45f2cb-c256-4a0f-879a-c7db5b1a0b94"
+set = "wth"
+number = "154"
+
+[cards."Oath of Druids"]
+id = "cf14de50-d123-400c-862e-2c95fd2aa23f"
+set = "exo"
+number = "115"
+
+[cards."Opalescence"]
+id = "3c0071fb-afa5-47b5-b266-2b10a4f5a98a"
+set = "uds"
+number = "13"
+
+[cards."Opposition"]
+id = "95be2701-af7c-483e-8165-e8bd4b2774ed"
+set = "uds"
+number = "40"
+
+[cards."Opt"]
+id = "958262ec-8e52-40cf-a9fd-a60e42643e15"
+set = "inv"
+number = "64"
+
+[cards."Orim's Chant"]
+id = "055afa78-b969-498f-a3ad-c792426e5ee6"
+set = "pls"
+number = "11"
+
+[cards."Overload"]
+id = "c91fca91-7296-422e-b251-d571b710ff71"
+set = "inv"
+number = "157"
+
+[cards."Palinchron"]
+id = "5621db3f-a9e7-4350-9c6a-0ba04a628947"
+set = "ulg"
+number = "38"
+
+[cards."Parallax Tide"]
+id = "7fe593eb-df3c-43e5-97a6-418f91e87cb3"
+set = "nem"
+number = "37"
+
+[cards."Parallax Wave"]
+id = "cef789e8-e4cc-4f61-bc15-debc2487777f"
+set = "nem"
+number = "17"
+
+[cards."Peek"]
+id = "f50843cc-20ac-4746-816e-f2630aa31594"
+set = "ody"
+number = "91"
+
+[cards."Pernicious Deed"]
+id = "ae4cbb33-4947-49f0-b612-a92141fbfaa6"
+set = "apc"
+number = "114"
+
+[cards."Phantom Nishoba"]
+id = "56ebc372-aabd-4174-a943-c7bf59e5028d"
+set = "jud"
+number = "140"
+
+[cards."Phyrexian Arena"]
+id = "84e19975-e3e1-453b-b902-a1b1fc1d8504"
+set = "apc"
+number = "47"
+
+[cards."Phyrexian Devourer"]
+id = "319430fa-11e4-426e-8297-67df8474c3cc"
+set = "all"
+number = "125"
+
+[cards."Phyrexian Dreadnought"]
+id = "7b8197b9-0cd1-4fa1-9668-d1b5f1759151"
+set = "mir"
+number = "315"
+
+[cards."Phyrexian Furnace"]
+id = "e98bca31-8c05-430b-b5d7-331bdc55710a"
+set = "wth"
+number = "155"
+
+[cards."Phyrexian Negator"]
+id = "45a02d67-5931-49ae-a28e-57aa6f9c7f83"
+set = "uds"
+number = "65"
+
+[cards."Pillage"]
+id = "389ecb50-b007-4086-89fb-ec2daa5afdcf"
+set = "all"
+number = "76"
+
+[cards."Plaguebearer"]
+id = "a8493df6-9954-4e33-867c-ca4bcf3953b2"
+set = "exo"
+number = "71"
+
+[cards."Polluted Delta"]
+id = "0f7585c8-9e21-4eef-afc1-2852de23db2f"
+set = "ons"
+number = "321"
+
+[cards."Portent"]
+id = "e040be83-3fb5-4da5-ba7a-4923b8854b74"
+set = "ice"
+number = "90"
+
+[cards."Powder Keg"]
+id = "4d9715c2-9036-4ae2-a5b4-1b190d50c963"
+set = "uds"
+number = "136"
+
+[cards."Price of Progress"]
+id = "8e5283db-3e22-4862-9d95-56d03d09c2ae"
+set = "exo"
+number = "95"
+
+[cards."Priest of Titania"]
+id = "965c33c3-0c68-4516-b8b0-5a0552ed44b6"
+set = "usg"
+number = "270"
+
+[cards."Prohibit"]
+id = "0daa5458-2a97-40d0-b18d-2381a7a68ee1"
+set = "inv"
+number = "67"
+
+[cards."Propaganda"]
+id = "f67dde4d-3df1-480d-a8b8-ab22c768bb12"
+set = "tmp"
+number = "80"
+
+[cards."Psychatog"]
+id = "6757bf0e-489f-4be2-9e41-463b59f00dd1"
+set = "ody"
+number = "292"
+
+[cards."Pyroblast"]
+id = "c342cac5-08ae-4428-9c2c-f6c5904e54d2"
+set = "ice"
+number = "213"
+
+[cards."Pyroclasm"]
+id = "88040748-ad76-4b9a-bd4e-87e5980e9816"
+set = "ice"
+number = "214"
+
+[cards."Pyrokinesis"]
+id = "db2a5e85-6cbc-43c1-9362-4056ad017ef0"
+set = "all"
+number = "78"
+
+[cards."Pyrostatic Pillar"]
+id = "5973cd53-f6cd-4edc-b952-f6d3eef97988"
+set = "scg"
+number = "100"
+
+[cards."Quirion Dryad"]
+id = "f6841ae6-b15f-488e-9cae-2cc5ec668278"
+set = "pls"
+number = "89"
+
+[cards."Quirion Ranger"]
+id = "56efe72c-6d7f-44f6-ac74-01af9305c4b6"
+set = "vis"
+number = "117"
+
+[cards."Ravenous Baloth"]
+id = "c98182d6-5b25-4493-9286-f29633e1bec4"
+set = "ons"
+number = "278"
+
+[cards."Ravenous Rats"]
+id = "8899244b-737a-43a9-9241-15a650b47bed"
+set = "p02"
+number = "87"
+
+[cards."Reality Ripple"]
+id = "c5b94eed-2a45-4a6b-a06b-a2021b174bc5"
+set = "mir"
+number = "87"
+
+[cards."Reanimate"]
+id = "ae1ef31c-8ca5-444c-8f39-e1d1827318f5"
+set = "tmp"
+number = "151"
+
+[cards."Recurring Nightmare"]
+id = "c8173030-1c33-417c-b8e9-79231b6a85a7"
+set = "exo"
+number = "72"
+
+[cards."Red Elemental Blast"]
+id = "4fafd3f9-f7de-4d6e-8824-6b60866fc50f"
+set = "leb"
+number = "170"
+
+[cards."Replenish"]
+id = "7fd2fe13-bbc0-42b7-bc42-3b51910ce118"
+set = "uds"
+number = "15"
+
+[cards."Reprisal"]
+id = "179f50be-6658-42f4-b9b9-c97c7d3f239a"
+set = "all"
+number = "13a"
+
+[cards."Rishadan Port"]
+id = "477a1f53-5cdf-4b45-b584-2e36b31a3fdb"
+set = "mmq"
+number = "324"
+
+[cards."Rising Waters"]
+id = "ec9c84db-cf45-43e1-b38f-8bbf53cf088b"
+set = "nem"
+number = "38"
+
+[cards."Rith's Grove"]
+id = "740fa25d-9c1f-44eb-9eb4-0dd514cb315a"
+set = "pls"
+number = "141"
+
+[cards."Roar of the Wurm"]
+id = "ddf54317-4c08-4a66-9fd2-9983384e2374"
+set = "ody"
+number = "266"
+
+[cards."Rofellos, Llanowar Emissary"]
+id = "6aa5cc65-f8f1-4f6f-8b4e-2fedccbda684"
+set = "uds"
+number = "118"
+
+[cards."Root Maze"]
+id = "99a12b74-f191-4362-81ab-77590ae5e68f"
+set = "tmp"
+number = "250"
+
+[cards."Rotlung Reanimator"]
+id = "87b29d1e-9c06-4ad1-8178-b3eaa212f6f1"
+set = "ons"
+number = "164"
+
+[cards."Rule of Law"]
+id = "246a68e9-fd19-4a1e-8c7b-fcd3f7306dfb"
+set = "mrd"
+number = "19"
+
+[cards."Rushing River"]
+id = "52ddf7bf-de9c-4657-8d5b-79869d36fa63"
+set = "pls"
+number = "30"
+
+[cards."Sapphire Medallion"]
+id = "3ab1e253-47cb-4089-87d5-0f998025d98c"
+set = "tmp"
+number = "306"
+
+[cards."Seal of Cleansing"]
+id = "af6c921e-1b82-412c-9979-adfdf83440f7"
+set = "nem"
+number = "18"
+
+[cards."Seasinger"]
+id = "c5266aa1-e2ea-46b9-91ab-b94a7bb7e9f9"
+set = "fem"
+number = "25"
+
+[cards."Serra's Sanctum"]
+id = "f7a18130-dbaa-4657-a885-3a96a985935a"
+set = "usg"
+number = "325"
+
+[cards."Shallow Grave"]
+id = "d5c782cc-c951-4c6f-a93f-774ae6c1c214"
+set = "mir"
+number = "141"
+
+[cards."Shatter"]
+id = "76ddf3f4-1305-4599-bf4c-f9e148bdda4d"
+set = "leb"
+number = "174"
+
+[cards."Shattering Pulse"]
+id = "89d3b846-6071-4d65-86ba-da08c4bd0aa1"
+set = "exo"
+number = "102"
+
+[cards."Shivan Reef"]
+id = "c3403143-2b4e-4408-b138-c856bbc1e9a5"
+set = "apc"
+number = "142"
+
+[cards."Show and Tell"]
+id = "4b851c17-55ed-4671-b471-dc7b34944432"
+set = "usg"
+number = "96"
+
+[cards."Sickening Dreams"]
+id = "9396ac77-9f53-46bd-b126-02441a0f5594"
+set = "tor"
+number = "83"
+
+[cards."Siege-Gang Commander"]
+id = "92e78cec-aaf9-4fe8-887b-b7e356d63315"
+set = "scg"
+number = "103"
+
+[cards."Silver Knight"]
+id = "93f559da-08ad-402d-8c6b-3050bce5867b"
+set = "scg"
+number = "23"
+
+[cards."Skeletal Scrying"]
+id = "ee49bae4-b53f-4d62-9ba6-6105b0087bcf"
+set = "ody"
+number = "161"
+
+[cards."Smother"]
+id = "9a8321af-d667-44e7-8c03-3957286604b9"
+set = "ons"
+number = "170"
+
+[cards."Snap"]
+id = "f7e0549e-2d23-4ea8-b8d1-ae21af2c9091"
+set = "ulg"
+number = "43"
+
+[cards."Snuff Out"]
+id = "18a3cca1-e50e-49b6-9e1a-f86640e3b177"
+set = "mmq"
+number = "162"
+
+[cards."Solitary Confinement"]
+id = "e7a8eb7a-eb3f-405e-8f44-d8ea64d76386"
+set = "jud"
+number = "24"
+
+[cards."Sphere of Resistance"]
+id = "17f4d2a5-bb85-4662-b2dd-a363ec7eab9b"
+set = "exo"
+number = "139"
+
+[cards."Spike Feeder"]
+id = "3751b2ae-a234-4691-984b-2f9f6b1cd1df"
+set = "sth"
+number = "118"
+
+[cards."Spike Weaver"]
+id = "9c561a2a-91c6-4d4b-9f96-bffd43a00478"
+set = "exo"
+number = "128"
+
+[cards."Spiritmonger"]
+id = "b96d6e67-f690-4f19-bb25-a7c2d2aaf42f"
+set = "apc"
+number = "121"
+
+[cards."Squee, Goblin Nabob"]
+id = "4ba8325a-1203-4125-9111-94d9e2b1f14b"
+set = "mmq"
+number = "214"
+
+[cards."Standstill"]
+id = "3ede3f6f-e642-4fe4-aa37-0f01cdf4d149"
+set = "ody"
+number = "102"
+
+[cards."Stasis"]
+id = "73c76f5d-d866-4eb7-b2d2-fc6ecf982f8e"
+set = "leb"
+number = "81"
+
+[cards."Sterling Grove"]
+id = "40b26aa3-8169-4978-9554-bd2fc8e18e3b"
+set = "inv"
+number = "278"
+
+[cards."Stifle"]
+id = "2d7643c0-b2db-478f-944e-b27b77bad3eb"
+set = "scg"
+number = "52"
+
+[cards."Stone Rain"]
+id = "901831ad-1840-4287-b6a0-bea310598dc2"
+set = "leb"
+number = "178"
+
+[cards."Submerge"]
+id = "d2741fe4-37fe-427f-ae85-5107991d4eee"
+set = "nem"
+number = "48"
+
+[cards."Sulfuric Vortex"]
+id = "79955e27-eef7-43bd-9895-e9209ed1537f"
+set = "scg"
+number = "106"
+
+[cards."Survival of the Fittest"]
+id = "c060c178-3c0e-493f-b6f0-ead5b1d6f191"
+set = "exo"
+number = "129"
+
+[cards."Sutured Ghoul"]
+id = "f769536f-def1-40b8-863f-ba12c7cb0d87"
+set = "jud"
+number = "73"
+
+[cards."Swords to Plowshares"]
+id = "255099be-c64e-4f6a-8463-4fc058d6908d"
+set = "leb"
+number = "41"
+
+[cards."Sylvan Library"]
+id = "f486df00-7c4a-4ff0-bb0b-c8b5432ac742"
+set = "leg"
+number = "207"
+
+[cards."Tainted Field"]
+id = "75b5f0aa-1570-4064-ad20-aac7be8b2c9c"
+set = "tor"
+number = "140"
+
+[cards."Tangle Wire"]
+id = "ad62f313-8a8a-4ffa-ada2-b12b76288729"
+set = "nem"
+number = "139"
+
+[cards."Teferi's Response"]
+id = "f3bb2df8-c559-4a34-83b0-d48fbc694cc8"
+set = "inv"
+number = "78"
+
+[cards."Tempting Wurm"]
+id = "857c2b6c-cfdf-4c88-a334-2937cb7db603"
+set = "ons"
+number = "291"
+
+[cards."Tendrils of Agony"]
+id = "0559352e-95c1-403b-bd8f-d0679717cfa2"
+set = "scg"
+number = "75"
+
+[cards."Terminate"]
+id = "190ca502-672d-4cc0-b6e0-b9de517058d0"
+set = "pls"
+number = "128"
+
+[cards."Terravore"]
+id = "c39c412b-2f21-483a-b744-5d55bc007c0d"
+set = "ody"
+number = "278"
+
+[cards."The Rack"]
+id = "ec0686ba-1277-4412-a397-7a6227808311"
+set = "atq"
+number = "72"
+
+[cards."Thermokarst"]
+id = "00ae906b-2c4d-48e9-9f2d-217777e22292"
+set = "ice"
+number = "268"
+
+[cards."Threaten"]
+id = "de9676b6-6812-44e5-ad70-f498fbad0e18"
+set = "ons"
+number = "241"
+
+[cards."Thwart"]
+id = "c12a0717-e9ea-4be3-a29f-179671ed4489"
+set = "mmq"
+number = "108"
+
+[cards."Tinker"]
+id = "7da23b15-dfb8-4267-9b33-d7a4c035c434"
+set = "ulg"
+number = "45"
+
+[cards."Tradewind Rider"]
+id = "09412374-3645-4644-952e-2beaefb3104b"
+set = "tmp"
+number = "98"
+
+[cards."Tranquil Domain"]
+id = "801f34a6-9f22-43c2-b1e5-194395cc7da1"
+set = "mir"
+number = "245"
+
+[cards."Treachery"]
+id = "613694aa-b169-400d-8063-2b83d8303611"
+set = "uds"
+number = "50"
+
+[cards."Treetop Village"]
+id = "02212bd8-0c0f-4e8e-99f1-a8477476c03a"
+set = "ulg"
+number = "143"
+
+[cards."Triskelion"]
+id = "a79c99e1-722a-44b6-8fa3-2be3f0c193d8"
+set = "atq"
+number = "73"
+
+[cards."Tsabo's Web"]
+id = "0dee69f8-cceb-41b9-a0ee-6b2ac9f4bad9"
+set = "inv"
+number = "317"
+
+[cards."Uktabi Orangutan"]
+id = "101c7d58-43cc-4ebd-87f1-2016fbff56dd"
+set = "vis"
+number = "123"
+
+[cards."Underground River"]
+id = "92369d7e-5e5a-46f9-bb31-c57d62410283"
+set = "ice"
+number = "362"
+
+[cards."Unearth"]
+id = "b6cb2549-e485-44d6-9d65-7605c568909e"
+set = "ulg"
+number = "72"
+
+[cards."Vendetta"]
+id = "67ced38e-0f33-4bda-8e18-09f6ac03a3d7"
+set = "mmq"
+number = "170"
+
+[cards."Vindicate"]
+id = "2a1bfefd-dae8-49e9-9d56-cc852e3dc93b"
+set = "apc"
+number = "126"
+
+[cards."Vision Charm"]
+id = "78b384d3-3adf-493a-8b89-bfe68fd1c3e2"
+set = "vis"
+number = "49"
+
+[cards."Voidmage Prodigy"]
+id = "7441e7f9-a326-4f61-b7b1-e0dbed06046f"
+set = "ons"
+number = "120"
+
+[cards."Volrath's Shapeshifter"]
+id = "ec89ee13-34ef-41c8-8fe4-0a6b21df2032"
+set = "sth"
+number = "48"
+
+[cards."Volrath's Stronghold"]
+id = "43bf015b-152e-4d67-b773-e75fb2487a32"
+set = "sth"
+number = "143"
+
+[cards."Wall of Blossoms"]
+id = "7eb4a1a3-efcf-4c9a-ad1f-0a3f8f2b456f"
+set = "sth"
+number = "125"
+
+[cards."Wall of Roots"]
+id = "aeb151d2-c313-44d2-972e-33487f070c23"
+set = "mir"
+number = "253"
+
+[cards."Wasteland"]
+id = "99ff731b-8399-40c8-b539-ba6ba5783771"
+set = "tmp"
+number = "330"
+
+[cards."Waterfront Bouncer"]
+id = "8dbdce9e-94fa-4ed5-9b97-d2026cffe7cb"
+set = "mmq"
+number = "114"
+
+[cards."Weathered Wayfarer"]
+id = "f6601ab1-3862-4aff-82be-be15493fe4b0"
+set = "ons"
+number = "59"
+
+[cards."Werebear"]
+id = "964cf7e3-932d-432f-8ad4-9bd651aada96"
+set = "ody"
+number = "282"
+
+[cards."Whipcorder"]
+id = "3bf6987e-a6e4-4a88-af0b-cf3b2d2b80c7"
+set = "ons"
+number = "60"
+
+[cards."Wild Growth"]
+id = "64f299eb-9cd6-40bc-ad44-22e3aeb5c930"
+set = "leb"
+number = "230"
+
+[cards."Wild Mongrel"]
+id = "5bb8dd5c-a79a-4afc-80b2-64645bb17a34"
+set = "ody"
+number = "283"
+
+[cards."Windswept Heath"]
+id = "7a7c5941-9c8a-4a40-9efb-a84f05c58e53"
+set = "ons"
+number = "328"
+
+[cards."Wing Shards"]
+id = "65efa443-666a-45c1-8784-e98c510854b5"
+set = "scg"
+number = "25"
+
+[cards."Winter Orb"]
+id = "847de6a4-a268-492e-a4d2-5b12237bc130"
+set = "leb"
+number = "276"
+
+[cards."Winter's Grasp"]
+id = "b2215de4-da49-4270-aec7-5e16a938bae4"
+set = "por"
+number = "194"
+
+[cards."Wirewood Symbiote"]
+id = "49488b76-abaf-4dba-b01f-7b418e4ff295"
+set = "scg"
+number = "133"
+
+[cards."Withered Wretch"]
+id = "b8a82948-503f-4ad4-9e3c-c080c16afd63"
+set = "lgn"
+number = "86"
+
+[cards."Wonder"]
+id = "44670666-9028-4b4a-a5af-a3bf35fc6a21"
+set = "jud"
+number = "54"
+
+[cards."Worship"]
+id = "908781a0-1ba4-4027-bd9d-13f9faf08686"
+set = "usg"
+number = "57"
+
+[cards."Wrath of God"]
+id = "96dd2d61-a43d-4582-b730-71d4fac0fa23"
+set = "leb"
+number = "46"
+
+[cards."Wretched Anurid"]
+id = "aab525ad-1f62-4d9c-9b74-c7b0048da452"
+set = "ons"
+number = "183"
+
+[cards."Xantid Swarm"]
+id = "6a87911a-3931-46aa-9348-2728c4b73b96"
+set = "scg"
+number = "135"
+
+[cards."Yavimaya Elder"]
+id = "325d9372-01c9-4e99-a966-13c8f8566e2e"
+set = "uds"
+number = "124"
+
+[cards."Zombie Infestation"]
+id = "ccd5f98a-7ab5-44b3-850c-b50963dace66"
+set = "ody"
+number = "170"
+
+[cards."Zuran Orb"]
+id = "3a9d1082-a862-45d4-9e5e-392e879fead6"
+set = "ice"
+number = "350"
+
+[cards."Exploration"]
+id = "2f09e451-0246-45a2-8bfd-07d3c65ddfe6"
+set = "usg"
+number = "250"
+
+[cards."Seal of Removal"]
+id = "487becfe-a9b1-4029-a487-2a32561570cb"
+set = "nem"
+number = "42"
+
+[cards."Ruby Medallion"]
+id = "24cdb28b-85f3-41ae-b1f5-fac766b2dcd2"
+set = "tmp"
+number = "305"
+
+[cards."Seal of Fire"]
+id = "37eaf1f6-4bdc-4669-9a15-50b65e016ccf"
+set = "nem"
+number = "98"
+
+[cards."Hearth Charm"]
+id = "caa9ac66-51b7-4aec-92dc-0f0656b0f7fe"
+set = "vis"
+number = "82"
+
+[cards."Skirk Prospector"]
+id = "eb545dcd-3a7a-46a7-9c35-d28faebc6d17"
+set = "ons"
+number = "230"
+
+[cards."Anurid Brushhopper"]
+id = "b09204c7-3e3d-484a-a4f7-da1b818e3884"
+set = "jud"
+number = "137"
+
+[cards."Glowrider"]
+id = "9ad94e39-0aac-46bb-a7f2-bd88c537cb9c"
+set = "lgn"
+number = "15"
+
+[cards."Ray of Revelation"]
+id = "6d762c8c-6172-4dc0-8fcc-d0f6dd8ca013"
+set = "jud"
+number = "20"
+
+[cards."Tormod's Crypt"]
+id = "0f9668ba-d26d-4484-b4b8-6fb91fbfb617"
+set = "drk"
+number = "112"
+
+[cards."Skycloud Expanse"]
+id = "c8c0da61-59c5-4206-83d9-c4676e169f01"
+set = "ody"
+number = "327"
+
+[cards."Forbid"]
+id = "29df5ef7-d679-4543-bdb7-3984155c87e0"
+set = "exo"
+number = "35"
+
+[cards."Coastal Tower"]
+id = "d115dbff-e35b-495f-a1e3-19651895927e"
+set = "inv"
+number = "321"
+
+[cards."Akroma's Vengeance"]
+id = "5e33aaf7-7490-4b64-a966-82fbf7ca8686"
+set = "ons"
+number = "2"
+
+[cards."Bottomless Pit"]
+id = "91f05fc3-da6e-45d4-8566-f4e7bdce1fe5"
+set = "sth"
+number = "51"
+
+[cards."Funeral Charm"]
+id = "e79d7240-2014-4838-bace-80666192a73e"
+set = "vis"
+number = "61"
+
+[cards."Chain of Smog"]
+id = "6bfe64f9-8b03-41f6-a47b-fade397ad9d1"
+set = "ons"
+number = "132"
+
+[cards."Bane of the Living"]
+id = "f45ebf65-77b8-41bc-b913-d864c4a00549"
+set = "lgn"
+number = "60"
+
+[cards."Skittering Skirge"]
+id = "93aba9d5-5f96-4aba-8248-74398b8bfe9d"
+set = "usg"
+number = "158"
+
+[cards."Dark Supplicant"]
+id = "eb685932-5df5-4f26-9633-b1daa8925359"
+set = "lgn"
+number = "64"
+
+[cards."Scion of Darkness"]
+id = "497c2629-1263-48a4-9c31-7f052808b2b8"
+set = "lgn"
+number = "79"
+
+[cards."Cabal Archon"]
+id = "4bdf6e2a-1bf5-4d63-a58b-883cfb1ea0fa"
+set = "ons"
+number = "129"
+
+[cards."Priest of Gix"]
+id = "64166899-fcc6-4000-9994-643f5a4cd214"
+set = "usg"
+number = "150"
+
+[cards."Phyrexian Tower"]
+id = "4f915cf0-6273-4896-bf24-fb0ec17b6096"
+set = "usg"
+number = "322"
+
+[cards."Pox"]
+id = "a914138c-a593-414c-bbcb-83d3c1bc4f6f"
+set = "ice"
+number = "158"
+
+[cards."Cephalid Coliseum"]
+id = "d5d74112-7244-4c3f-a5eb-b6be671aefe8"
+set = "ody"
+number = "317"
+
+[cards."Upheaval"]
+id = "9e201229-34a6-48c8-a07c-d8aefcf5f8a7"
+set = "ody"
+number = "113"
+
+[cards."Battlefield Scrounger"]
+id = "f5ac74bc-1198-4a9a-bcde-668cca08b274"
+set = "jud"
+number = "106"
+
+[cards."Animate Dead"]
+id = "20d5059a-60a4-4135-863f-85a48bff8731"
+set = "leb"
+number = "93"
+
+[cards."Sleight of Hand"]
+id = "f3405184-dcda-4bb6-ade6-c2a87bc3296d"
+set = "p02"
+number = "46"
+
+[cards."Saproling Symbiosis"]
+id = "2bb63748-5c84-43a0-8f17-a2a17f658337"
+set = "inv"
+number = "209"
+
+[cards."Plains"]
+id = "b9e35567-05df-4a3f-8c29-d8327abc2e8d"
+set = "usg"
+number = "331"
+
+[cards."Mountain"]
+id = "1cef9230-34fa-496f-8835-5dfaac627f70"
+set = "mir"
+number = "346"
+
+[cards."Bloodstained Mire"]
+id = "68c72226-6f52-4322-8b14-18737293dfa0"
+set = "ons"
+number = "313"
+
+[cards."Goblin token"]
+id = "08ca3900-3845-40ac-8581-d4aebc2850a0"
+set = "p03"
+number = "5"
+
+[cards."Forest"]
+id = "7b0af992-80e0-4ac6-a828-5eaac47eaff6"
+set = "ons"
+number = "349"
+
+[cards."Wooded Foothills"]
+id = "cdad38f7-9dfa-4f1b-9fac-41ab2b253f53"
+set = "ons"
+number = "330"
+
+[cards."Elephant token"]
+id = "3dc13cf6-665a-4d92-836f-b2e10ca08ecd"
+set = "pr2"
+number = "5"
+
+[cards."Swamp"]
+id = "7aa97b25-1ea0-4351-ab9f-f06c8bb4d044"
+set = "ons"
+number = "341"
+
+[cards."Brushland"]
+id = "170e5ccd-54bf-4c6d-86b4-0359ca8f36e8"
+set = "ice"
+number = "352"
+
+[cards."Fertile Ground"]
+id = "091dda35-59e5-456d-8804-61513a610aed"
+set = "usg"
+number = "252"
+
+[cards."Fyndhorn Elves"]
+id = "3ba95ffa-990a-4013-98b7-5d8c0b34e9c4"
+set = "ice"
+number = "244"
+
+[cards."Karplusan Forest"]
+id = "ba6f1263-d598-49fb-b5f8-09f11822ebd0"
+set = "ice"
+number = "356"
+
+[cards."Anger"]
+id = "fa2920af-e6a1-4939-ab59-67af4430e5b8"
+set = "jud"
+number = "77"
+
+[cards."Squirrel token"]
+id = "af7c2def-d20d-4670-8950-7042e9380844"
+set = "pr2"
+number = "3"
+
+[cards."Llanowar Wastes"]
+id = "610b7cd5-5532-45a9-acfe-24a818034d1c"
+set = "apc"
+number = "141"
+
+[cards."Tranquil Thicket"]
+id = "afcb7cef-8aeb-4c84-88e9-6df17768e292"
+set = "ons"
+number = "326"
+
+[cards."Secluded Steppe"]
+id = "ea454280-f7f4-4315-bb46-b56050c02c97"
+set = "ons"
+number = "324"
+
+[cards."Battlefield Forge"]
+id = "a9c25e71-0140-48fe-8b9e-33b4b50c5c12"
+set = "apc"
+number = "139"
+
+[cards."Urza's Tower"]
+id = "8ed85655-fc59-4a57-bcf9-75e1899dff78"
+set = "atq"
+number = "85a"
+
+[cards."Urza's Mine"]
+id = "ddf85792-470b-4b42-99ac-9cb43a575523"
+set = "atq"
+number = "83a"
+
+[cards."Urza's Power Plant"]
+id = "94896e0b-859c-47e4-bf27-35ed37b841e0"
+set = "atq"
+number = "84a"
