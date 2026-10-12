@@ -136,10 +136,10 @@ def test_assets_are_cache_busted_by_content(result):
 def test_share_previews(result):
     from builder.cards import Register
     dn = Register.load(ROOT / "data" / "cards.toml").get("Phyrexian Dreadnought")
-    assert f'<meta property="og:image" content="{dn.image("large")}">' in result.html
+    assert f'<meta property="og:image" content="{dn.image("art_crop")}">' in result.html
     assert '<meta property="og:title" content="Mono-Blue Dreadnought — A Premodern primer">' in result.html
     assert '<meta property="og:description" content="' in result.html and '<meta name="description" content="' in result.html
-    assert '<meta name="twitter:card" content="summary">' in result.html
+    assert '<meta name="twitter:card" content="summary_large_image">' in result.html
 
 
 def test_favicon(result):
