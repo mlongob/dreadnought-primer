@@ -110,7 +110,7 @@ Unknown cards fail the build with the command to add them. Add the card, don't w
    Ripple/Intuition choices, the Flare + Back to Basics sideboard pedigree), SpockVidaLoka and
    LuffyDoChapeuDePalha (the Brazilian MTGO grinders whose 75 is the stock list; this list is theirs
    minus Misdirection, plus Brain Freeze), Simone Fierro (won the European Championship with Tranquil
-   Domain in the side off Vision Charm's land-type mode). Claire Ackerman (5C Oath Ponza, built to beat the deck). The Foreword and Resources credit the primers and communities the author named; beyond those, no other credits.
+   Domain in the side off Vision Charm's land-type mode). Claire Ackerman (5C Oath Ponza, built to beat the deck). The Foreword and Resources credit the primers and communities the author named, and Resources has a Thanks list for readers whose feedback changed the primer (the author approves each name and line); beyond those, no other credits.
 5. **Images everywhere.** When a card is discussed, show it, even if it was shown before. Key-card rows
    show THEIR cards, not ours. Rows of up to four.
 6. **Corrections already made — never reintroduce:** Portent is a sorcery; Foil pitches an Island plus any card, blue or not (only Flash of Insight needs blue cards); Impulse bottoms (Oracle),

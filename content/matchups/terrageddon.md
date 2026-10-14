@@ -42,7 +42,7 @@ Brain Freeze is dead against a deck that doesn't draw itself out. Daze leaves be
 {card: Meddling Mage}
 **4C Terrageddon.** The same deck with blue added for Meddling Mage in the main, and that makes the matchup unfavorable: a Mage naming Phyrexian Dreadnought, or the enabler you are short of, shuts the combo off for as long as it lives, and it comes down early enough to name the card before you can protect it. Counter it on cast when you can; after sideboarding, Essence Flare kills it in two upkeeps, and a Keg already sitting at two kills it at once. The rest of the plan is the Naya one. Their mana is worse than Naya's — to fit four colors they cut the cycling lands for more multicolor lands — so Back to Basics hurts them even more.
 
-**Sideboarding (4C):** −1 Brain Freeze, −1 Thwart, −2 Daze, −2 Flash / +2 Annul, +2 Back to Basics, +2 Flare.
+**Sideboarding (4C):** −1 Brain Freeze, −1 Thwart, −2 Daze, −2 Flash, −1 Peek / +3 Annul, +2 Back to Basics, +2 Flare.
 
-**Why these, against 4C.** Flare is the answer to the Mage that you can cast at sorcery speed on your own terms. Two Flares come in, and Annul drops to two to make room: a Mage is the card that matters more than any one Library or Aura. Both Flashes leave: the game turns on answering the Mage early, not on the long game.
+**Why these, against 4C.** Flare is the answer to the Mage that you can cast at sorcery speed on your own terms. Two Flares come in, and Peek makes room, so Annul stays at three: a Mage is the card that matters more than any one Library or Aura, but their Libraries, Auras and Moxes are still the targets that decide the long game. Both Flashes leave: the game turns on answering the Mage early, not on the long game.
 
