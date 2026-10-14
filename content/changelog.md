@@ -5,7 +5,7 @@ This primer is a living document: it changes as the format does and as I learn m
 **Version 0.2 — October 2026.** Changes from readers' feedback; the people behind them are thanked in [Resources](#resources).
 
 - The mirror: the second Chain comes in for the Keg after sideboarding, and Thwart stays in place of Peek.
-- GW and 5C Oath Ponza are now one entry, with Glowrider, three Flares, and a slower game after sideboarding.
+- GW Oath Ponza now covers the five-color versions too, with Glowrider, three Flares, and a slower game after sideboarding.
 - Moneyball Black: a Dreadnought and a Stifle come out after sideboarding, and only two Foils.
 - The main-deck Brain Freeze is the flex slot, with Misdirection, a second Keg or a third Flash as the alternatives, and Misdirection gets the weight it deserves.
 - Close candidates: Prohibit, Morphling, Masticore and Mage's Guile, and a third Flash for the sideboard.
