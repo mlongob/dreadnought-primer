@@ -99,7 +99,7 @@ Unknown cards fail the build with the command to add them. Add the card, don't w
 ## The author's conventions (follow them)
 
 1. **The 75 is fixed.** Variants and alternatives appear only in History, Versions and Close
-   candidates, to justify slots. Nowhere after that may the text suggest changing the list.
+   candidates, to justify slots. Nowhere after that may the text suggest changing the list, except the flex slot (the main-deck Brain Freeze), which the author presents as a choice: Misdirection, a second Keg or a third Flash fit it too.
 2. **No stats in prose.** Numbers date and the document is living. Say "most", "a third", "nearly
    every". The intro keeps a few positioning numbers stamped "as of October 2026". Never count matchups
    or rows ("twelve of the mapped decks"); matchups are added organically. (Land-drop probabilities in
@@ -108,12 +108,12 @@ Unknown cards fail the build with the command to add them. Add the card, don't w
    time", not "always". "Be careful Flaring a pumper", not "never".
 4. **Credits:** none in the text for now, except facts: Dave Kaplan (the jam build, Reality
    Ripple/Intuition choices, the Flare + Back to Basics sideboard pedigree), SpockVidaLoka and
-   LuffyDoChapeuDePalha (the Portuguese MTGO grinders whose 75 is the stock list; this list is theirs
+   LuffyDoChapeuDePalha (the Brazilian MTGO grinders whose 75 is the stock list; this list is theirs
    minus Misdirection, plus Brain Freeze), Simone Fierro (won the European Championship with Tranquil
    Domain in the side off Vision Charm's land-type mode). Claire Ackerman (5C Oath Ponza, built to beat the deck). The Foreword and Resources credit the primers and communities the author named; beyond those, no other credits.
 5. **Images everywhere.** When a card is discussed, show it, even if it was shown before. Key-card rows
    show THEIR cards, not ours. Rows of up to four.
-6. **Corrections already made — never reintroduce:** Portent is a sorcery; Impulse bottoms (Oracle),
+6. **Corrections already made — never reintroduce:** Portent is a sorcery; Foil pitches an Island plus any card, blue or not (only Flash of Insight needs blue cards); Impulse bottoms (Oracle),
    doesn't shuffle; Annul doesn't counter Brain Freeze; Meddling Mage has no trigger and rarely names
    Stifle; Sutured Ghoul's exile is a replacement effect (not Stifle-able); Volrath's Shapeshifter's copy
    is static, its "2: discard" is the activation; Pernicious Deed is black-green; Negator is mana value

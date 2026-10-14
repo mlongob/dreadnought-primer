@@ -27,7 +27,7 @@ Two in the side plus one main gives three for the Freeze plans: mirror, Enchantr
 ### Chain of Vapor (1)
 
 {card: Chain of Vapor}
-The second copy for the matchups where tempo on a permanent is the plan: Mox decks, Mage decks, Negator and Specter decks, Tog pumps, Dryad. It stays out against green decks with lands to spare — Elves, the Rock — where it gets copied onto your Dreadnought. In the mirror it stays out too, unless they are on a jam list with no Brain Freeze, like Dave Kaplan's: there their resolved Dreadnought is the whole game, and the second Chain comes in for it.
+The second copy for the matchups where tempo on a permanent is the plan: Mox decks, Mage decks, Negator and Specter decks, Tog pumps, Dryad. It stays out against green decks with lands to spare — Elves, the Rock — where it gets copied onto your Dreadnought. In the mirror it comes in for the Keg: after sideboarding the game is a counter war, and a one-mana instant that answers their Dreadnought on your terms is worth more than a permanent they can see coming.
 
 ### Essence Flare (3)
 

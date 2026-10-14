@@ -2,7 +2,7 @@
 
 Four builds of the mono-blue deck exist, and three splashes. The builds first; what separates them is how they plan to win the long game.
 
-1.  The default build: no AK, two or three Daze, Misdirection main, no main-deck Brain Freeze. This is the majority of Mono-Blue Dreadnought lists, and it is the stock list because of two Portuguese MTGO grinders, SpockVidaLoka and LuffyDoChapeuDePalha, who have top-16'd and won Premodern Challenges with it throughout 2026 — Spock took the 138-player Championship Week Finals with it — and whose exact 75 is now shared by well over a hundred registered lists. When people say "the stock list" they mean theirs.
+1.  The default build: no AK, two or three Daze, Misdirection main, no main-deck Brain Freeze. This is the majority of Mono-Blue Dreadnought lists, and it is the stock list because of two Brazilian MTGO grinders, SpockVidaLoka and LuffyDoChapeuDePalha, who have top-16'd and won Premodern Challenges with it throughout 2026 — Spock took the 138-player Championship Week Finals with it — and whose exact 75 is now shared by well over a hundred registered lists. When people say "the stock list" they mean theirs.
 
 2.  The Accumulated Knowledge build: four AK, usually with two or three Daze and no Misdirection. About a quarter of lists: a card-advantage version that wins the long game against control and the mirror on cards rather than on Freeze.
 
@@ -22,7 +22,7 @@ The deck is a xerox deck — cantrips standing in for lands; the 17 Islands entr
 
 {cards: Wasteland | Dust Bowl | Rishadan Port | Back to Basics}
 
-Every nonbasic you add is a card that can't pay for Daze or Thwart, can't be pitched to Foil, and gives the opponent's Wasteland a target. A two-land Daze hand is a keep in the mono version and a mulligan in a two-color one.
+Every nonbasic you add is a card that can't pay for Daze or Thwart, can't be the Island Foil pitches, and gives the opponent's Wasteland a target. A two-land Daze hand is a keep in the mono version and a mulligan in a two-color one.
 
 **What the splashes buy.** White and black are the powerful splashes, because each adds proactive disruption and a second plan rather than just removal. Red makes a different deck. All three pay the same price.
 
@@ -32,7 +32,7 @@ Every nonbasic you add is a card that can't pay for Daze or Thwart, can't be pit
 
 *Red* (Shivan Reef) adds Fling — throw the Dreadnought at their face with the trigger on the stack, twelve damage for three mana, Dreadnought included, and no enabler needed — with Fire/Ice and Bolt for Mage, Swarm and Lackey, and Pyroblast for the mirror and blue control. This is an all-in combo deck with two kill routes rather than a splash: it gives up the control posture, the counter wars and most of the build-up plan; and its answers to Mage, Swarm and Lackey do jobs Flare and Keg already do in the mono sideboard.
 
-The shared cost is the one above — every painland and fetch is a land the free spells can't use and Wasteland can — and one more: every non-blue spell is a card Foil can't pitch and Flash of Insight can't exile, so each one you add shrinks the card-advantage package the deck's long game is built on: a Swords in hand is a card you can only cast.
+The shared cost is the one above — every painland and fetch is a land the free spells can't use and Wasteland can — and one more: every non-blue spell is a card Flash of Insight can't exile, so each one you add makes the deck's flashback card advantage weaker.
 
 The mono-blue case is that the sideboard patches the same gaps for free. Essence Flare, Keg and the Blasts handle the small creatures; Annul, Chain and Keg handle the permanents; Brain Freeze is the second plan the black version gets from Tog. None of them ask you to play a land that isn't an Island. UW and UB Stiflenought are real decks and win events; they trade the thing no other deck in the format has — a mana base the free spells run on — for cards several decks have.
 

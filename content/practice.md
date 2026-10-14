@@ -41,7 +41,7 @@ Attack with the Dreadnought. Then, in your second main phase, cast the other Dre
 
 If they respond to the trigger by destroying either Dreadnought, that is the spell to counter.
 
-**Why not hold everything.** Attacking and keeping all three Islands up for Stifle and Counterspell doesn't work: their attack alone is seven, and you are at seven. Not attacking at all does survive — the untapped Dreadnought blocks, Counterspell takes their card, Stifle takes the Fanatic — but it leaves them at nineteen, and it gives them another turn of draws. The swap gives you the same defense and puts them a turn from dead.
+**Doing nothing is an option.** Not attacking at all also survives: the untapped Dreadnought blocks, Counterspell takes their card, and Stifle takes the Fanatic. It isn't the best play — it leaves them at nineteen and gives them another turn of draws, where the swap gives you the same defense and puts them a turn from dead — but it is a reasonable choice. What doesn't work is attacking and keeping all three Islands up for Stifle and Counterspell: their attack alone is seven, and you are at seven. Nor does walling with both Dreadnoughts: not attacking and casting the second with Stifle leaves one Island, and a single burn spell to your face, followed by the whole board into your two blockers, gets the last points through.
 {/answer}
 
 ### Puzzle 2: the Siege-Gang swing

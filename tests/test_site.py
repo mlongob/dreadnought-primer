@@ -32,7 +32,7 @@ def test_dark_default(result):
 
 
 def test_title_block(result):
-    assert "<h1>Mono-Blue Dreadnought</h1>" in result.html and "Version 0.1 · October 2026" in result.html
+    assert "<h1>Mono-Blue Dreadnought</h1>" in result.html and "Version 0.2 · October 2026" in result.html
 
 
 def test_every_toc_link_resolves(result):

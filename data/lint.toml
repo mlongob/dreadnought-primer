@@ -39,6 +39,14 @@ patterns = [
 # Claims the author has corrected: pattern (regex) and the correction.
 
 [[claims]]
+pattern = "(non-blue|nonblue)[^.]*Foil can't pitch|Foil can only pitch blue"
+fix = "Foil pitches an Island and any other card, blue or not"
+
+[[claims]]
+pattern = "Portuguese (MTGO )?grinders"
+fix = "Spock and Luffy are Brazilian"
+
+[[claims]]
 pattern = "Portent is an instant"
 fix = "Portent is a sorcery"
 

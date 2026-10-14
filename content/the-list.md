@@ -20,5 +20,5 @@ This is the Spock and Luffy list with one change: Brain Freeze in the Misdirecti
 | 2 Blue Elemental Blast | 3 Essence Flare  |
 | 2 Hydroblast           |                  |
 
-**The choices this 75 makes.** The main-deck Brain Freeze is the Misdirection slot in most lists. The sideboard Chain could be main and the main Keg in the side; I play them this way round. Back to Basics over Tsabo's Web is the one sideboard call the matchups below argue for at length. The third Daze is the card most often argued over in this build, and I play two. From here on the primer treats the 75 as fixed: the card analysis explains why each card is in it, and the matchups never ask you to change it.
+**The choices this 75 makes.** The main-deck Brain Freeze is the flex slot, Misdirection in most lists. The sideboard Chain could be main and the main Keg in the side; I play them this way round. Back to Basics over Tsabo's Web is the one sideboard call the matchups below argue for at length. The third Daze is the card most often argued over in this build, and I play two. From here on the primer treats the 75 as fixed: the card analysis explains why each card is in it, and the matchups never ask you to change it.
 

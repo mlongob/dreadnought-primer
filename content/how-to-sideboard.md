@@ -26,7 +26,7 @@ The first question in every matchup is which turn you want to go off. Everything
 
 **Habits.**
 
-- Try not to go down two cantrips. The natural and wrong instinct is to read Opt, Peek and Impulse as cards that do nothing and cut them to make room for silver bullets. They are the land count: cut three or four and the deck stops finding its answers, its Dreadnoughts, its land drops and the sideboard cards you just brought in. If the ins outnumber the acceptable outs, bring fewer cards in.
+- I try not to go down two cantrips. It is tempting to read Opt, Peek and Impulse as cards that do nothing and cut them to make room for silver bullets, but they are the land count: cut three or four and the deck stops finding its answers, its Dreadnoughts, its land drops and the sideboard cards you just brought in. If the ins outnumber the acceptable outs, I would rather bring fewer cards in.
 
 - One row per deck, split only where the deck itself splits into variants. Daze counts are defaults: adjust them for the play or the draw and for what you see at the table.
 
