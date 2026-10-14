@@ -1,6 +1,6 @@
 +++
 [[map]]
-label = "GW and 5C Oath Ponza"
+label = "GW Oath Ponza"
 
 [[map]]
 label = "GR Oath Ponza"
