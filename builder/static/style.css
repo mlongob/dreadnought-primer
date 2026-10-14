@@ -357,7 +357,7 @@ dialog.zoom button { font: inherit; color: #E8EDF2; background: none; border: 1p
 .pz-stack > .pz-card:nth-child(3) { left: calc(var(--pz-fan) * 2); bottom: calc(var(--pz-fan) * 2); }
 .pz-stack > .pz-card:nth-child(4) { left: calc(var(--pz-fan) * 3); bottom: calc(var(--pz-fan) * 3); }
 /* phased out: a dashed outline and a tag, never a dimmed image */
-.pz-phased::before { content: ""; position: absolute; inset: -.3rem; border: 2px dashed var(--island); border-radius: 8px; }
+.pz-phased::before { content: ""; position: absolute; inset: -.3rem; border: 2px dashed var(--island); border-radius: 8px; pointer-events: none; }
 .pz-nametag { position: absolute; left: 50%; top: calc(100% + .2rem); transform: translateX(-50%); z-index: 2;
   width: max-content; max-width: calc(var(--pz-card) * 1.25); text-align: center;
   font: 600 .64rem/1.25 var(--sans); padding: .1rem .4rem; border-radius: .4rem; background: var(--ink); color: var(--paper); }
@@ -420,7 +420,7 @@ dialog.zoom button { font: inherit; color: #E8EDF2; background: none; border: 1p
 /* the stack, bottom on the left and top on the right, slightly overlapping; a faint midline splits the table, and each item leans towards whoever put it there */
 .pz-stackzone { --pz-card: 5.2rem; --pz-lean: .7rem; position: relative; display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) 3.5rem;
   align-items: center; padding: .3rem .9rem; border-top: 1px solid var(--rule); background: color-mix(in srgb, var(--island) 7%, var(--panel)); }
-.pz-stackitems::before { content: ""; position: absolute; left: -100vw; right: -100vw; top: 50%; border-top: 1px dashed color-mix(in srgb, var(--ink-soft) 55%, transparent); }
+.pz-stackitems::before { content: ""; position: absolute; left: -100vw; right: -100vw; top: 50%; border-top: 1px dashed color-mix(in srgb, var(--ink-soft) 55%, transparent); pointer-events: none; }
 .pz-stackitems { position: relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5rem 0;
   list-style: none; margin: 0; padding: var(--pz-lean) 0; }
 /* room for the target notes, only when there are some */

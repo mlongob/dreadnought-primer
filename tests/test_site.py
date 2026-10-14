@@ -258,3 +258,10 @@ def test_link_previews_show_the_art_not_the_whole_card(result):
     image = re.search(r'<meta property="og:image" content="([^"]+)"', result.html).group(1)
     assert "/art_crop/" in image
     assert '<meta name="twitter:card" content="summary_large_image">' in result.html
+
+
+def test_board_overlays_let_clicks_through_to_the_card():
+    css = (ROOT / "builder" / "static" / "style.css").read_text()
+    for selector in (".pz-phased::before", ".pz-stackitems::before"):
+        rule = re.search(re.escape(selector) + r"\s*\{([^}]*)\}", css).group(1)
+        assert "pointer-events: none" in rule, selector
