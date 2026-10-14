@@ -22,4 +22,4 @@ Priest of Gix and Recurring Nightmare can also loop: the three mana from the Pri
 
 **Sideboarding:** −2 Foil, −1 Brain Freeze, −1 Peek / +1 Chain, +3 Flare.
 
-**Why these.** The Moneyball Black plan, all three Flares included — their creatures are what you sideboard for — with one difference: Back to Basics stays in the sideboard, since their mana is Swamps, so two Foils stay in.
+**Why these.** The Moneyball Black plan, all three Flares included — their creatures are what you sideboard for — with two differences: Back to Basics stays in the sideboard, since their mana is Swamps, and all four Dreadnoughts and Stifles stay, since they play little removal and an early jam wins games.

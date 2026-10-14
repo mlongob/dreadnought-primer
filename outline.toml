@@ -1,7 +1,7 @@
 # Page metadata and reading order. Every file in content/ must be listed here, and nothing else.
 title = "Mono-Blue Dreadnought"
 subtitle = "A Premodern primer"
-dateline = "Version 0.1 · October 2026"
+dateline = "Version 0.2 · October 2026"
 # For search engines and link previews (Discord, Reddit, Twitter)
 description = "How Mono-Blue Dreadnought (Stiflenought) plays in Premodern: the combo, every card in the 75, the sideboard, mulligans and the matchups."
 share_card = "Phyrexian Dreadnought"   # the card image shown in link previews, and its art at the top of the page

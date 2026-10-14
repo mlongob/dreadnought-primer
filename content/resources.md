@@ -52,4 +52,10 @@ Some of these aren't public, and some are paid. For those, ask the authors on th
 
 **Help improve it.** Spotted a mistake, disagree with a sideboard plan, or have a matchup to add? Tell me on the Shrimp, [open an issue](https://github.com/mlongob/dreadnought-primer/issues/new), or [send a pull request](https://github.com/mlongob/dreadnought-primer/pulls): the whole primer is plain text in a public repository.
 
+**Thanks.** To the members of [the Shrimp](https://discord.gg/7g6nvher9H) whose feedback changed these pages:
+
+- NeuroticJet42, who helped shape the Enchantress plan before the first version was written.
+- switalsky, whose feedback on the mirror, Oath Ponza and Moneyball changed those sideboard plans: Chain over Keg in the mirror, more respect for Glowrider and a slower game against Ponza, and fewer Dreadnoughts against Moneyball. Thanks too for suggesting Prohibit, Misdirection, Morphling, Masticore, Mage's Guile and a third Flash of Insight as cards worth considering.
+- RickD, for pointing out two mistakes in version 0.1.
+
 **Where the numbers come from.** The numbers in this primer come from my tournament database: 16,796 decklists from January 18 to October 6, 2026 — MTGO Challenge and League feeds, mtgtop8 and mtgdecks, with paper events merged across sources — and 8,112 from 2025, with win-loss records where standings exist. Every share, conversion, win rate, card frequency and stock list in these pages comes from it. It stores placements, not pairings, so there are no per-matchup win rates.

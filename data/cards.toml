@@ -1828,3 +1828,13 @@ number = "83a"
 id = "94896e0b-859c-47e4-bf27-35ed37b841e0"
 set = "atq"
 number = "84a"
+
+[cards."Morphling"]
+id = "812f4d5c-aacf-4bd8-849d-80a357a7804d"
+set = "usg"
+number = "85"
+
+[cards."Mage's Guile"]
+id = "301cb538-a931-4916-927b-4986046b1158"
+set = "ons"
+number = "91"
