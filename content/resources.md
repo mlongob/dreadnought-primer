@@ -55,7 +55,7 @@ Some of these aren't public, and some are paid. For those, ask the authors on th
 **Thanks.** To the members of [the Shrimp](https://discord.gg/7g6nvher9H) whose feedback changed these pages:
 
 - NeuroticJet42, who helped shape the Enchantress plan before the first version was written.
-- switalsky, whose feedback on the mirror, Oath Ponza and Moneyball changed those sideboard plans: Chain over Keg in the mirror, more respect for Glowrider and a slower game against Ponza, and fewer Dreadnoughts against Moneyball. Thanks too for suggesting Prohibit, Misdirection, Morphling, Masticore, Mage's Guile and a third Flash of Insight as cards worth considering.
+- switalsky, whose feedback on the mirror, Oath Ponza and Moneyball changed those sideboard plans: Chain over Keg in the mirror, more respect for Glowrider and a slower game against Ponza, and fewer Dreadnoughts against Moneyball. Thanks too for suggesting Prohibit, Misdirection, Morphling, Masticore, Mage's Guile and a third Flash of Insight as cards worth considering, and for the advice on Sylvan Library, on Peek against Sligh and on the Psychatog decks.
 - RickD, for pointing out two mistakes in version 0.1.
 - cjohnston55, for pointing out that Boomerang should be compared with the Chain it would replace, not a cantrip.
 

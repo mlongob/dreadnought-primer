@@ -1,14 +1,14 @@
 +++
 [[map]]
-label = "Psychatog"
+label = "UB Psychatog"
 +++
-### Psychatog
+### UB Psychatog
 
 {cards: Psychatog | Duress | Accumulated Knowledge | Gush}
 
 {cards: Smother | Vendetta | Sickening Dreams | Wonder}
 
-**Verdict.** Slightly unfavorable before sideboarding — the main-deck Brain Freeze is what lifts it from plain unfavorable — and favorable after.
+**Verdict.** Favorable. Game one is the harder half, and the main-deck Brain Freeze is what keeps it close; after sideboarding, with three Freezes against a deck that plays no Stifle, it leans strongly your way.
 
 **What they do.** A Xerox blue deck with a black splash, built very much like yours: Impulse, Opt, Portent and Gush to run the mana, Counterspell and Foil to fight on the stack. Black buys them Psychatog, Duress, and removal in Smother, Sickening Dreams and sometimes Vendetta, plus the sideboard cards. They play more lands than you do.
 
@@ -18,7 +18,7 @@ Their plan is to cast cantrips and interactive spells until the graveyard is ful
 
 The Dreadnought dies to Smother — it is mana value one — and to Vendetta, which costs them twelve life; Charm in response to either. Many lists also play Powder Keg, and at one it kills the Dreadnought: Charm in response when they crack it.
 
-Blue-black is the main build, but there are others. The most popular is Esper Tog, which plays much more like Grow-a-Tog than like this deck: see [Grow-a-Tog](#grow-a-tog).
+This entry is the blue-black build. The other Tog decks — Grow-a-Tog, with or without main-deck Meddling Mage, and Esper Tog — play much more like each other than like this one: see [Grow-a-Tog](#grow-a-tog).
 
 {cards: Powder Keg | Polluted Delta | Counterspell | Foil}
 
@@ -28,7 +28,7 @@ Blue-black is the main build, but there are others. The most popular is Esper To
 
 **Game one.** You have two ways in. Early, before they have their counters up, a protected Dreadnought can take the game by itself. Or play for the mill, fighting their Psychatogs while you build to it. Most games become the second.
 
-Duress is the card that beats the mill plan: it can take a Freeze, or the Stifle and Charm that protect a Dreadnought, out of your hand. Keep a Counterspell up for it when you can. When the Freeze is the card that matters, Portent can hide it: put it second from the top, below the card Portent's delayed draw takes, and it waits in your library where Duress can't see it.
+Duress is the card that beats the mill plan: it can take a Freeze, or the Stifle and Charm that protect a Dreadnought, out of your hand. Whether to fight over it depends on your mana and your hand. Counter it and you have spent a counter; let it resolve and they take one. Either way it costs you a counter, so the real trade is mana for information: countering it costs mana and keeps your hand hidden, letting it resolve keeps your mana open and shows them everything. A Brain Freeze in hand changes that when you are on the mill plan: now the card Duress takes is the Freeze, not a counter, and countering it is worth much more. Duress into Psychatog is their key play, so fight over the Duress when you have the mana to counter it and still fight over the Tog that follows; let it resolve when you need that mana open for the Tog. When the Freeze is the card that matters, Portent can hide it: put it second from the top, below the card Portent's delayed draw takes, and it waits in your library where Duress can't see it.
 
 The best time to Freeze is their end step after a long fight over a win condition, because every spell in that fight counts toward your storm. Picture their turn: Duress, your Counterspell, Psychatog, your Counterspell, their Gush, their Foil — the Tog has landed, and the storm count is six. At their end step, two Freezes mill forty-five cards, which is usually lethal at that stage of the game. If they cantrip a lot at your end step instead, you can fire it there too, when the count gets you to the right number.
 

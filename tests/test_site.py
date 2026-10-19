@@ -32,7 +32,7 @@ def test_dark_default(result):
 
 
 def test_title_block(result):
-    assert "<h1>Mono-Blue Dreadnought</h1>" in result.html and "Version 0.2 · October 2026" in result.html
+    assert "<h1>Mono-Blue Dreadnought</h1>" in result.html and "Version 0.3 · October 2026" in result.html
 
 
 def test_every_toc_link_resolves(result):
@@ -166,10 +166,10 @@ def test_review_edition_marks_an_edit(tmp_path):
     root = site_copy(tmp_path)
     base = current_texts(root)
     sligh = root / "content" / "matchups" / "sligh.md"
-    sligh.write_text(sligh.read_text().replace("Very favorable in game one", "Favorable in game one", 1))
+    sligh.write_text(sligh.read_text().replace("Game one is very favorable", "Game one is quite favorable", 1))
     result = build(root, None, review=base)
     assert [c.kind for c in result.changes] == ["edit"]
-    assert "<del>Very favorable</del><ins>Favorable</ins>" in result.html
+    assert "<del>very</del><ins>quite</ins>" in result.html
     assert 'href="#change-1"' in result.html
 
 

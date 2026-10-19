@@ -10,7 +10,7 @@ The first question in every matchup is which turn you want to go off. Everything
 
 - Flash of Insight leaves when you are jamming, because it is slow, and stays in every long game.
 
-- Peek is the first cantrip to go, because it selects nothing. Its value is information, and post-board that information is worth less: expect every opponent to have brought at least one answer to the Dreadnought, so the coast is rarely as clear as Peek says. It stays where knowing the coast is clear lets you go a turn earlier, as against Elves.
+- Peek is the first cantrip to go, because it selects nothing. Its value is information, and post-board that information is worth less: expect every opponent to have brought at least one answer to the Dreadnought, so the coast is rarely as clear as Peek says. It stays where knowing their hand changes the commit turn: against Elves, where a clear coast lets you go a turn earlier, and against Sligh, where it tells you how much protection the jam needs.
 
 - Opt goes only when something has to and you would rather keep Peek. Impulse doesn't go.
 

@@ -9,7 +9,7 @@ label = "Sligh"
 
 {cards: Grim Lavamancer | Cursed Scroll | Pyrostatic Pillar | Sulfuric Vortex}
 
-**Verdict.** Very favorable in game one, closer after sideboarding but still favorable. Sligh is one of the most-played decks in Premodern, fast and punishing to any stumble; you will face it constantly.
+**Verdict.** Favorable. Game one is very favorable; after sideboarding it gets closer, but it still leans your way. Sligh is one of the most-played decks in Premodern, fast and punishing to any stumble; you will face it constantly.
 
 **What they do.** Mono-red, and built to take your life total to zero as fast as any deck in the format. Cheap creatures first — Jackal Pup, Mogg Fanatic (a one-damage spell on a stick), Goblin Patrol, Grim Lavamancer (which turns their graveyard into two damage at a time) — to establish a clock. Seal of Fire for two. Then a full suite of instant-speed three-damage burn, Lightning Bolt and Incinerate, Flame Rift in some lists for four to each player, and four Fireblast in nearly all, which is the spell that usually finishes you by sacrificing two Mountains. The biggest single threat is Ball Lightning, and the thing to expect is that it hits you on turn three. Some lists run Pyrostatic Pillar or Sulfuric Vortex, enchantments whose job is to compress the game. Cursed Scroll grinds, and Barbarian Rings add reach at the end.
 
@@ -27,9 +27,9 @@ One caution on the first turn: a Mountain into Mogg Fanatic is also how Goblins 
 
 You bring the four blue Blasts, which counter Fireblast, Overload, Mogg Salvage, Threaten and the red [Blasts]{Pyroblast} and kill their creatures, and Essence Flare for the creatures: Jackal Pup and Grim Lavamancer are the prime targets, and Mogg Fanatic is the third — they will sacrifice it in response for the one damage, but a Fanatic left alone adds up to a lot more than one, so it has to be answered at some point.
 
-**Sideboarding:** −1 Brain Freeze, −2 Flash, −1 Thwart, −1 Keg, −1 Peek / +2 Blue Elemental Blast, +2 Hydroblast, +2 Flare.
+**Sideboarding:** −1 Brain Freeze, −2 Flash, −1 Thwart, −1 Keg, −1 Opt / +2 Blue Elemental Blast, +2 Hydroblast, +2 Flare.
 
-**Why these.** Freeze is dead against a deck that empties its hand. Flash is too slow against a clock this fast. Thwart's three Islands are the opposite of what a race wants. Keg's useful setting here is one — Pup, Fanatic, Patrol and Lavamancer all die to it — but that is the Dreadnought's setting too, and a race has no turn to spare for a two-mana artifact that can't be cracked with the Dreadnought out. Peek goes because the information isn't worth a card here: assume the burn is in the hand.
+**Why these.** Freeze is dead against a deck that empties its hand. Flash is too slow against a clock this fast. Thwart's three Islands are the opposite of what a race wants. Keg's useful setting here is one — Pup, Fanatic, Patrol and Lavamancer all die to it — but that is the Dreadnought's setting too, and a race has no turn to spare for a two-mana artifact that can't be cracked with the Dreadnought out. Peek stays: after sideboarding the commit turn depends on whether they hold an answer — an Overload or a Mogg Salvage for the Dreadnought, a red Blast for your Stifle or Charm — and Peek tells you whether to jam with one piece of protection, wait for a second, or play the long game. Opt goes instead: Impulse still digs four deep for the Blast or the protection you need, and Peek's look at their hand is worth more here than Opt's scry.
 
 Daze stays, because they tap out, and Fireblast and Salvage are often cast with no mana open, so Daze catches them. All four Foil stay: the resource they attack is life, not cards. Chain stays for a resolved Pillar or Bridge, or a Vortex they kept. Counterspell is for Fireblast and for their answers to the Dreadnought — Overload, Threaten, a red Blast; the blue Blasts and Flare handle the rest.
 
