@@ -14,7 +14,7 @@ improve each layer rather than reshuffling them.
 
 ## What's next
 
-`docs/ROADMAP.md` holds the planned work, proposals and open questions for the author. Update it when
+`private/ROADMAP.md` (never committed) holds the planned work, proposals and open questions for the author. Update it when
 the author adds, settles or finishes something.
 
 ## Reviewing changes with the author

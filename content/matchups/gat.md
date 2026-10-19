@@ -14,7 +14,9 @@ label = "GAT"
 
 {cards: Swords to Plowshares | Counterspell | Daze | Gush}
 
-Lists vary a lot. Some don't even run Quirion Dryad, some don't run Mox Diamond; some run Nimble Mongoose, Call of the Herd, Armageddon — which resets the game with a threat or a Mox Diamond already on the battlefield — or main-deck Meddling Mage, and a few play Winter Orb. Esper Tog, the white-blue-black Tog list, plays much like this deck too. The usual tip-off that you are facing GAT is the mana base and the choice of cantrips: it is one of the few decks running Portent, Sleight of Hand or Fire // Ice alongside white and green cards. For this entry, assume a list with main-deck Meddling Mage, Quirion Dryad and Psychatog.
+Lists vary a lot, and the Tog family has several branches. Grow-a-Tog proper is Dryad and Psychatog in a green-blue deck that splashes for its answers, and it comes with or without main-deck Meddling Mage. The lists with main-deck Mages, sometimes called 5C Tog, are the harder version for you, because of the Mages. Esper Tog, white-blue-black, plays no Dryad. It uses Mox Diamonds to bring the Mages down early, with four Swords to Plowshares, counters and card advantage, and often Gaea's Blessing in the sideboard. It is the hardest of them, and one of this deck's toughest matchups.
+
+Beyond those, some lists don't run Mox Diamond; some run Nimble Mongoose, Call of the Herd or Armageddon — which resets the game with a threat or a Mox Diamond already on the battlefield — and a few play Winter Orb. UB Psychatog, without the green or the white, has [its own entry](#ub-psychatog). The usual tip-off that you are facing GAT is the mana base and the choice of cantrips: it is one of the few decks running Portent, Sleight of Hand or Fire // Ice alongside white and green cards; Esper Tog shows white and black with no green. For this entry, assume a list with main-deck Meddling Mage, Quirion Dryad and Psychatog; against Esper Tog the plan is the same, with more respect for Swords and the Mages.
 
 {cards: Nimble Mongoose | Call of the Herd | Armageddon | Winter Orb}
 
@@ -32,7 +34,7 @@ Powder Keg at two sweeps Dryad and Meddling Mage without touching your Dreadnoug
 
 This is one matchup where attacking their mana is part of the plan. Stifle their Flooded Strand to keep them off white early in the game, and Chain of Vapor on a Mox Diamond sets them back too. Play around Armageddon when you can; if it is going to resolve, Gush in response to pick your Islands up.
 
-**After sideboarding.** The game becomes mostly the mill plan, on the same terms as against [Psychatog](#psychatog): Freezes that are lethal, not partial ones that feed their Tog. The difference is that your plan B, the Dreadnought, faces more removal than against Psychatog, and they have more threats to build a dangerous clock. They may bring more removal for the Dreadnought, such as Seal of Cleansing or Aura of Silence, and Gaea's Blessing against your pivot to the Freeze, so hold a Stifle for it.
+**After sideboarding.** The game becomes mostly the mill plan, on the same terms as against [UB Psychatog](#ub-psychatog): Freezes that are lethal, not partial ones that feed their Tog. The difference is that your plan B, the Dreadnought, faces more removal than against UB Psychatog, and they have more threats to build a dangerous clock. They may bring more removal for the Dreadnought, such as Seal of Cleansing or Aura of Silence, and Gaea's Blessing against your pivot to the Freeze, so hold a Stifle for it.
 
 {cards: Seal of Cleansing | Aura of Silence | Gaea's Blessing}
 
