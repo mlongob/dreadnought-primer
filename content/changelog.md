@@ -2,7 +2,7 @@
 
 This primer is a living document: it changes as the format does and as I learn more about the deck. Each version is listed here, newest first. To suggest a change, [open an issue](https://github.com/mlongob/dreadnought-primer/issues/new) or [send a pull request](https://github.com/mlongob/dreadnought-primer/pulls), or find me on the Shrimp.
 
-**Version 0.3 — in progress.** Changes from readers' feedback; the people behind them are thanked in [Resources](#resources).
+**Version 0.3 — October 19, 2026.** Changes from readers' feedback; the people behind them are thanked in [Resources](#resources).
 
 - Close candidates: the cards that aren't in this list are presented as choices, and Boomerang is compared with the Chain it would replace.
 - Foil: when a pitched Foil is worth three cards, and why Sylvan Library isn't, repeated in Terrageddon and Oath Ponza.
