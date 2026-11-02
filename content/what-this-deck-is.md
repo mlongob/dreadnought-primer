@@ -35,7 +35,7 @@ What it does well:
 
 - Three real game plans in one 75: jam, control into a protected Dreadnought, or mill with Brain Freeze. The sideboard reshapes the deck rather than patching it.
 
-What beats it: cheap threats that pressure you before your hand comes together, boards that assemble quickly and take over the game, decks that bring many answers to the Dreadnought, and lock pieces that tax or stop your spells. Against a deck that can show ten or more answers to a 12/12 after sideboarding, the Dreadnought plan is a losing one, which is why Brain Freeze is in the 75. The chapter on every answer to the Dreadnought and the matchups name the cards.
+What beats it: cheap threats that pressure you before your hand comes together, boards that assemble quickly and take over the game, decks that bring many answers to the Dreadnought, and lock pieces that tax or stop your spells. Against one of those that has few threats of its own, or a deck that casts enough spells to build the storm for you, Brain Freeze is often the better plan, on its own or beside the Dreadnought; that is why it is in the 75. The chapter on every answer to the Dreadnought and the matchups name the cards.
 
 {cards: Goblin Lackey | Xantid Swarm | Argothian Enchantress | Priest of Titania}
 

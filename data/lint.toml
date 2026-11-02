@@ -67,8 +67,8 @@ pattern = "Pernicious Deed[^.]*\\b(black-white|white-black|BW)\\b"
 fix = "Pernicious Deed is black-green"
 
 [[claims]]
-pattern = "Negator[^.]*\\bmana value (three|3)\\b"
-fix = "Negator is mana value 4"
+pattern = "Negator[^.]*\\bmana value (four|4)\\b"
+fix = "Negator is mana value 3"
 
 [[claims]]
 pattern = "Duress (can|could) take (the |a |your )?Dreadnought"
@@ -109,3 +109,7 @@ fix = "Dominate costs {X}{1}{U}{U}: four mana to take a Dreadnought"
 [[claims]]
 pattern = "[Ll]et the Survival resolve"
 fix = "Never let Survival of the Fittest resolve when you can counter it; Stifle what it finds only when you have no answer to it"
+
+[[claims]]
+pattern = "trigger on the stack costs you nothing"
+fix = "A Chain on the Dreadnought comes after the enabler, so it always costs you the enabler"

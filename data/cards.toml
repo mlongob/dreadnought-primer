@@ -1838,3 +1838,8 @@ number = "85"
 id = "301cb538-a931-4916-927b-4986046b1158"
 set = "ons"
 number = "91"
+
+[cards."Goblin Vandal"]
+id = "b7ad3b81-f706-4b33-b1ec-7600182a5232"
+set = "wth"
+number = "105"

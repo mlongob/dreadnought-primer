@@ -28,9 +28,11 @@ Uktabi Orangutan is every Full English Breakfast sideboard and a third of Elves 
 
 {cards: Nantuko Vigilante | Hull Breach}
 
-**Red.** This is the color that surprises people. Overload destroys an artifact of mana value 2 or less unkicked, and the Dreadnought is 1: it is three copies in nearly every Sligh sideboard, half of Mono-R Ponza sideboards, a fifth of Goblins and some Zoo. Mogg Salvage is free when they have a Mountain and you have an Island, which is always: half of Sligh sideboards, a fifth of Ponza, some Goblins. Pillage, artifact or land, is main in nearly every Mono-R Ponza list. Goblin Tinkerer is two copies main in nearly every Goblins list and kills a Dreadnought a turn for R once it untaps; Keg at 2 and Stifle on the activation are the answers.
+**Red.** This is the color that surprises people. Overload destroys an artifact of mana value 2 or less unkicked, and the Dreadnought is 1: it is three copies in nearly every Sligh sideboard, half of Mono-R Ponza sideboards, a fifth of Goblins and some Zoo. Mogg Salvage is free when they have a Mountain and you have an Island, which is always: half of Sligh sideboards, a fifth of Ponza, some Goblins. Pillage, artifact or land, is main in nearly every Mono-R Ponza list. Goblin Tinkerer is two copies main in nearly every Goblins list and kills a Dreadnought a turn for R once it untaps; Keg at 2 and Stifle on the activation are the answers. Goblin Vandal is main in a few Sligh lists; it destroys the Dreadnought only when it attacks unblocked, so an untapped Dreadnought holds one off, and Stifle or a Charm in response answers the trigger.
 
 {cards: Overload | Mogg Salvage | Pillage | Goblin Tinkerer}
+
+{cards: Goblin Vandal}
 
 **Colorless.** Powder Keg at 1 is the clean answer and the mirror's favorite: two main in Landstill, main in half of Tog lists and a third of Stasis lists, side in a third of Moneyball, Mono-Black Clerics and Pit Rack lists and some BW Control. Nevinyrral's Disk is Mono-R Ponza's, Mono-U control's and the UW Stiflenought's.
 
@@ -42,11 +44,9 @@ Uktabi Orangutan is every Full English Breakfast sideboard and a third of Elves 
 
 {cards: Gilded Drake | Dominate | Control Magic | Threaten}
 
-**They tap or fog it.** Fire // Ice is main in nearly every GAT list, a quarter of Terrageddon, and some Solution, Stasis, Zoo and splash-Stiflenought lists; Ice on your Dreadnought at your upkeep costs you the attack for two mana; counter it, or Charm the Dreadnought out in response so it has no target. Whipcorder is main in White Weenie, Rebels and a third of Solution lists; Spike Weaver and Spike Feeder appear in Survival and Oath sideboards. Kor Haven prevents all damage from one attacker each turn: a fifth of Terrageddon main decks, some Landstill and Weenie. It is a land, so Annul and Chain can't touch it; Stifle the activation or B2B it.
+**They tap or fog it.** Fire // Ice is main in nearly every GAT list, a quarter of Terrageddon, and some Solution, Stasis, Zoo and splash-Stiflenought lists. Ice on your Dreadnought at your upkeep costs you the attack for two mana; consider countering it for the tempo. Whipcorder is main in White Weenie, Rebels and a third of Solution lists; Spike Weaver appears in Survival and Oath sideboards. Kor Haven prevents all damage from one attacker each turn: a fifth of Terrageddon main decks, some Landstill and Weenie. It is a land, so Annul and Chain can't touch it; Stifle the activation or B2B it.
 
 {cards: Fire // Ice | Whipcorder | Kor Haven | Spike Weaver}
-
-{cards: Spike Feeder}
 
 **They prevent the damage or the win.** Solitary Confinement is two copies main in effectively every Enchantress list and in Doomsday sideboards. Worship is in White Clerics, Rebels, Weenie and Solution sideboards and some Enchantress lists: a Dreadnought alone cannot win through it, so the answer is Chain, Annul on cast, or Freeze. Humility is main in most Landstill lists. Elephant Grass (two to attack) is main in most Enchantress lists and is paid. Propaganda is in some Stasis lists. Ensnaring Bridge is Welder prison's, White Clerics', some Pit Rack's.
 
@@ -54,7 +54,7 @@ Uktabi Orangutan is every Full English Breakfast sideboard and a third of Elves 
 
 {cards: Elephant Grass | Ensnaring Bridge | Propaganda}
 
-**They bounce it.** Chain of Vapor is main in most Stasis lists, usually several copies, three in half the Aluren lists, a one-of in a third of Tog lists, and every mirror. Waterfront Bouncer is main in half the UG Madness lists and side in most, main in a quarter of UG Survival lists, and shows up in The Solution; it is a repeatable bounce for U, so Keg at 2 or Flare it. Man-o'-War is in every Aluren list and half of Opposition-Survival. Rushing River is in most Devourer sideboards and some Frantic Storm ones, Hoodwink in a third of Devourer's, Boomerang in a quarter of Stasis main decks, Capsize in Mono-U control. A bounced Dreadnought costs you an enabler to recast; a bounced Dreadnought with the trigger on the stack costs you nothing, which is why you let a Chain resolve in response to your own trigger when you can.
+**They bounce it.** Chain of Vapor is main in most Stasis lists, usually several copies, three in half the Aluren lists, a one-of in a third of Tog lists, and every mirror. Waterfront Bouncer is main in half the UG Madness lists and side in most, main in a quarter of UG Survival lists, and shows up in The Solution; it is a repeatable bounce for U, so Keg at 2 or Flare it. Man-o'-War is in every Aluren list and half of Opposition-Survival. Rushing River is in most Devourer sideboards and some Frantic Storm ones, Hoodwink in a third of Devourer's, Boomerang in a quarter of Stasis main decks, Capsize in Mono-U control. A bounced Dreadnought costs you an enabler to recast, on top of the one you already spent.
 
 {cards: Chain of Vapor | Waterfront Bouncer | Man-o'-War | Rushing River}
 
@@ -64,7 +64,7 @@ Uktabi Orangutan is every Full English Breakfast sideboard and a third of Elves 
 
 Every blue deck fights on the stack, and the fight is over three spells, not one: the Dreadnought, the Stifle and the Charm. Counterspell is four main in Landstill, GAT, Tog, Stasis, Mono-U control and every Stiflenought, three in The Solution, and in about half the UG Survival and Oath lists. Daze is in every Stasis and UG Madness list, most UG Survival, half of GAT. Mana Leak is four in Landstill, three in The Solution, and in Replenish, Mono-U control, UG Survival, Oath and some Tog. Circular Logic is four in every UG Madness list and in a quarter of Tog lists. Force Spike is Mono-U control's; Prohibit is in half the Landstill lists; Absorb in a quarter; Arcane Denial is main in Stasis and a sideboard card in Frantic Storm; Memory Lapse in the Dimir Stiflenought and The Solution.
 
-Foil is four main in every mirror and in most UB Tog lists, and it is the counter you can't play around by waiting for them to tap out; Thwart is the mirror's, and the one that turns their three Islands into a counter at any moment. Annul, one mana for an artifact or enchantment spell, is the cheapest counter for your Dreadnought and is in nearly every Tog, Landstill and Stasis sideboard, two-thirds of Solution's, half of UG Madness's, a third of BW Control's, and every mirror. Mana Short is Stasis's main-deck card and UB Stasis's and Frantic Storm's sideboard card: it ends your turn's interaction before you take it.
+Foil is four main in every mirror and in most UB Tog lists, and it is the counter you can't play around by waiting for them to tap out; Thwart is the mirror's, and the one that turns their three Islands into a counter at any moment. Annul, one mana for an artifact or enchantment spell, is the cheapest counter for your Dreadnought and is in nearly every Tog, Landstill and Stasis sideboard, two-thirds of Solution's, half of UG Madness's, a third of BW Control's, and every mirror. Mana Short is Stasis's main-deck card and UB Stasis's and Frantic Storm's sideboard card: it ends your turn's interaction before you take it, and cast in response to the Dreadnought it leaves you no mana for the enabler.
 
 Pyroblast and Red Elemental Blast are the red decks' one-mana Counterspells, and nothing more exotic than that: in nearly every Sligh, Goblins, Zoo, Ponza and Terrageddon sideboard, two-thirds of GR Ponza's, most Devourer's, and some Hermit, Welder and Survival sideboards. On a Counterspell they win the counter war; on a Stifle or a Charm with the trigger on the stack they kill the Dreadnought.
 

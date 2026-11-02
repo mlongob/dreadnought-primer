@@ -2,13 +2,13 @@
 
 In the blind, the hand I want has four pieces: two land drops, a Dreadnought, an enabler, and protection. I'll mulligan to find three of the four, and I want the Dreadnought to be one of them — unless the hand has the cards to find it. With the mana and an enabler already in place, two or three cantrips — or Gush and Flash of Insight — stand in for the missing Dreadnought: trust them to find it.
 
-**What to look for.** In the blind I mulligan to hands that can present a Dreadnought on turn two or three. Not every one of them has a Dreadnought in it — the cantrips stand in — but every one can get there. The reason is game one. Against the linear decks — Sligh, Goblins, Elves — an early Dreadnought is close to a free win, because they have nothing for it before sideboarding. Lose that game, and the next two are played through all the answers they bring in.
+**What to look for.** In the blind I mulligan to hands that can present a Dreadnought on turn two or three. Not every one of them has a Dreadnought in it — the cantrips stand in — but every one can get there. The reason is game one. Against the linear decks — Sligh, Goblins, Elves — an early Dreadnought is close to a free win, because they have little or nothing for it before sideboarding. Lose that game, and the next two are played through all the answers they bring in.
 
 Dreadnought is the hardest card in the deck to find. Four copies, and the eleven cantrips look at one to four cards each; a hand without one and without the cantrips to dig for it spends turns doing nothing, and most of the field kills you in that time. Keeping a seven with lands and cantrips and no threat feels safe and loses more games than a mulligan to five with a Dreadnought in it — many of this deck's losses are games spent digging for the Dreadnought that never arrived. The London mulligan is the tool for that: seeing a fresh seven and bottoming one costs far less than those games cost, and it is cheapest of all in the matchups where the only way to win is to present a Dreadnought in the first two or three turns. So in the blind, mulligan to the Dreadnought, or to the cantrips that will find it.
 
 **What to bottom.** After a mulligan you see seven and put one on the bottom, two after a second mulligan. Bottom in roughly this order: a land beyond the third; a utility one-of the hand has no use for yet — Keg, Chain, Brain Freeze; a second Dreadnought when the hand has one enabler; a Foil with nothing to pitch to it. Remember what you bottomed: it is the first card of the bottom of your library you will arrange later.
 
-Once you know who you're playing, the hand changes. Against anything aggressive — Sligh, Goblins, Elves, Zoo — the race is the whole game: keep Dreadnought plus enabler plus two lands and let them have the information, and mulligan a seven of counters and cantrips. Against control and combo, a hand of lands, cantrips and counters is a keep; the Dreadnought comes later and the hand builds toward the commit turn.
+Once you know who you're playing, the hand changes. Against anything aggressive — Sligh, Goblins, Elves, Zoo — the race is the whole game: keep Dreadnought plus enabler plus two lands, and mulligan a seven of counters and cantrips. Against control and combo, a hand of lands, cantrips and counters is a keep; the Dreadnought comes later and the hand builds toward the commit turn.
 
 Against discard — Moneyball, Deadguy, the Rock, BW Control, anything with Duress and Cabal Therapy — keep seven as often as you can, because cards are the resource under attack and a seven is two more than a five. All the hand needs is lands and spells. A seven with two Dreadnoughts is often a worse hand there than a seven with none: the game starts with Therapy naming Dreadnought and you are on five cards before you've played a spell. In those matchups I'd rather find the Dreadnought later, when the discard has been spent and I'm ready to jam it, than hold it through their turn two.
 
@@ -36,7 +36,7 @@ Turn two, with the land in hand: play it, Dreadnought with Charm on the trigger,
 
 {hand: Stifle | Counterspell | Phyrexian Dreadnought | Island | Opt | Thwart | Counterspell}
 
-*Keep on the draw, mulligan on the play.* Opt alone finds the second Island 83% of the time on the draw and 71% on the play, and this hand does nothing until it does. On the draw the extra card tips it; on the play, with no Portent and no second cantrip, it goes back. When you keep it and the land arrives, the two Counterspells buy you the luxury of waiting: hold one up, counter their proactive plays, make the third land drop so Thwart is live, and combo when it is safe rather than when it is possible. Opt is looking for an Island; everything after that is looking for a second cantrip.
+*Keep on the draw, mulligan on the play.* Opt alone finds the second Island 83% of the time on the draw and 71% on the play, and this hand does nothing until it does. On the draw the extra card tips it; on the play, with no Portent and no second cantrip, it goes back. When you keep it and the land arrives, the two Counterspells buy you the luxury of waiting: hold one up, counter their proactive plays, make the third land drop so Thwart is live, and combo when it is safe rather than when it is possible. Opt is looking for an Island, and so is every draw after it: the combo and the counters are already there.
 
 {hand: Foil | Island | Opt | Island | Counterspell | Impulse | Island}
 
@@ -52,7 +52,7 @@ Turn two, with the land in hand: play it, Dreadnought with Charm on the trigger,
 
 {hand: Gush | Island | Island | Portent | Island | Opt | Island}
 
-*Mulligan on seven; at six it is close, and I may even go to five.* Four lands and three cantrips find the deck, but the hand has no threat and no enabler, and with this many lands a Gush only draws you past seven into discards. The lands are a resource in a long game, but as a seven this is a mulligan in the blind, and even as a six it is a hand that digs while the opponent develops. The cantrips are looking for the Dreadnought.
+*Mulligan on seven; at six it is close, and I may even go to five.* Four lands, Portent and Opt, but the hand has no threat and no enabler, and with this many lands a Gush only draws you past seven into discards. The lands are a resource in a long game, but as a seven this is a mulligan in the blind, and even as a six it is a hand that digs while the opponent develops. The cantrips are looking for the Dreadnought.
 
 {hand: Opt | Vision Charm | Island | Portent | Stifle | Island | Opt}
 
@@ -68,7 +68,7 @@ Turn two, with the land in hand: play it, Dreadnought with Charm on the trigger,
 
 {hand: Opt | Island | Phyrexian Dreadnought | Impulse | Counterspell | Island | Portent}
 
-*Keep, play or draw.* A Dreadnought, three cantrips, a Counterspell and two lands — no enabler, but Portent, Opt and Impulse between them see eight cards by turn three, and there are eight enablers in the fifty-three. This is the ordinary good hand: the threat is in it and the cantrips are looking for the one card that turns it on.
+*Keep, play or draw.* A Dreadnought, three cantrips, a Counterspell and two lands — no enabler, but Portent, Opt and Impulse between them see up to nine cards by turn three, and there are eight enablers in the fifty-three. This is the ordinary good hand: the threat is in it and the cantrips are looking for the one card that turns it on.
 
 {hand: Island | Thwart | Island | Phyrexian Dreadnought | Island | Brain Freeze | Island}
 

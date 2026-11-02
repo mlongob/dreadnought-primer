@@ -14,5 +14,5 @@ The deck you'll meet today took shape after the Parallax Tide ban in January 202
 
 {cards: Brain Freeze | Essence Flare | Tsabo's Web | Dominate}
 
-Brain Freeze is the plan B that took Tide's place. A no-AK list rarely out-cards an opponent who brings ten answers to a 12/12, so against those decks it stops trying and takes their library instead. Nearly every sideboard now holds two Freeze; the question the builds split on is whether one belongs in the main.
+Brain Freeze is the plan B that took Tide's place. A no-AK list rarely out-cards an opponent who brings many answers to a 12/12 and few threats, so against those decks it stops trying and takes their library instead. Nearly every sideboard now holds two Freeze; the question the builds split on is whether one belongs in the main.
 

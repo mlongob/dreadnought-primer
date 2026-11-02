@@ -2,6 +2,13 @@
 
 This primer is a living document: it changes as the format does and as I learn more about the deck. Each version is listed here, newest first. To suggest a change, [open an issue](https://github.com/mlongob/dreadnought-primer/issues/new) or [send a pull request](https://github.com/mlongob/dreadnought-primer/pulls), or find me on the Shrimp.
 
+**Version 0.4 — November 1, 2026.** Changes from readers' feedback; the people behind them are thanked in [Resources](#resources).
+
+- Fixes: Powder Keg's settings (Negator is mana value 3), why a phased-in Dreadnought can attack, Spike Feeder doesn't answer the Dreadnought, Fire // Ice and Mana Short, a Chain on the Dreadnought always costs you the enabler, Stifling a single Port gains nothing, Misdirection can send a counter onto the Misdirection, why the blue Blasts stay out against GR Oath Ponza, and the cantrip counts and wording in Mulligans.
+- When the Freeze plan is right: decks with many answers and few threats, or decks that build the storm for you.
+- Annul is sized by how much its targets matter as well as how many there are.
+- Goblin Vandal in Sligh and in Answers to the Dreadnought, and the Welder risk of a cracked Keg.
+
 **Version 0.3 — October 19, 2026.** Changes from readers' feedback; the people behind them are thanked in [Resources](#resources).
 
 - Close candidates: the cards that aren't in this list are presented as choices, and Boomerang is compared with the Chain it would replace.
