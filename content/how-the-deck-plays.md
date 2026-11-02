@@ -8,7 +8,7 @@ You only have to be one turn faster than your opponent. Everything about sequenc
 |---|---|---|---|---|
 | Jam | Low-interaction aggro, fast combo | Dreadnought by turn two to four with whatever protection the hand allows; the race is the whole game | Enablers, Daze and Foil | Flash, Thwart, Freeze |
 | Build-up | Heavy interaction with a slow clock | Turn five or later: hit land drops, hold Gush and the Flash flashback, cast Portent so its draw lands after your discard step, go to ten or eleven cards against their seven, then commit once with everything | Gush, Flash, Foil for the commit turn | A Dreadnought or two, so the first one goes the distance |
-| Freeze | Decks with ten or more answers to a 12/12 after boarding, or no counters and a lot of card draw | When the storm is there and a Stifle for their reshuffle (Gaea's Blessing) is in hand | Charms, Gush, the Freezes | Most of the Dreadnoughts; some stay as action they must answer |
+| Freeze | Decks with many answers to a 12/12 after boarding and few threats of their own, or decks that build the storm for you, like Enchantress | When the storm is there and a Stifle for their reshuffle (Gaea's Blessing) is in hand | Charms, Gush, the Freezes | Most of the Dreadnoughts; some stay as action they must answer |
 
 **The hand-size edge.** Your opponent can hold seven cards. Fact or Fiction and Standstill are worth less to a player already holding seven: whatever they draw past that, they discard. If you win over several turns they cash those in; if you win in one Dreadnought cycle they cannot have the mana for all their draw and all their answers at once. So against control you leave Gush in hand and Flash in the yard until the turn you go, then draw to ten and play through.
 

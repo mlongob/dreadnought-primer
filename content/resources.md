@@ -58,5 +58,8 @@ Some of these aren't public, and some are paid. For those, ask the authors on th
 - switalsky, whose feedback on the mirror, Oath Ponza and Moneyball changed those sideboard plans: Chain over Keg in the mirror, more respect for Glowrider and a slower game against Ponza, and fewer Dreadnoughts against Moneyball. Thanks too for suggesting Prohibit, Misdirection, Morphling, Masticore, Mage's Guile and a third Flash of Insight as cards worth considering, and for the advice on Sylvan Library, on Peek against Sligh and on the Psychatog decks.
 - RickD, for pointing out two mistakes in version 0.1.
 - cjohnston55, for pointing out that Boomerang should be compared with the Chain it would replace, not a cantrip.
+- Risumu, for correcting Powder Keg's settings and for the warning about Goblin Welder and a cracked Keg.
+- FriedrichDürrenmatt, for pointing out that Goblin Vandal was missing from Sligh.
+- loom_tall, for a careful read that caught a long list of mistakes, from Chain of Vapor and the Freeze plan to Annul, Misdirection and the mulligan hands.
 
 **Where the numbers come from.** The numbers in this primer come from my tournament database: 16,796 decklists from January 18 to October 6, 2026 — MTGO Challenge and League feeds, mtgtop8 and mtgdecks, with paper events merged across sources — and 8,112 from 2025, with win-loss records where standings exist. Every share, conversion, win rate, card frequency and stock list in these pages comes from it. It stores placements, not pairings, so there are no per-matchup win rates.

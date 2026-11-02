@@ -5,7 +5,7 @@ Fifteen cards, six roles, and nothing in it is a one-matchup bullet. The shape o
 ### Annul (3)
 
 {card: Annul}
-The premier answer and the reason the artifact-and-enchantment matchups are winnable. It counters Dreadnought in the mirror, [Survival]{Survival of the Fittest}, Deed, [Sphere]{Sphere of Resistance}, [Oath]{Oath of Druids}, Library, Mox, Aura of Silence, Seal of Cleansing, Hidden Gibbons, Standstill, Humility, Grid, Opalescence, [Stasis]{Stasis}, Vise, Root Maze, Zombie Infestation, [Aluren]{Aluren}, Dream Halls and every artifact in a Devourer deck, for one mana. Size it by targets: one copy per three or four targets in their 75; against most of the artifact-and-enchantment decks that is all three.
+The premier answer and the reason the artifact-and-enchantment matchups are winnable. It counters Dreadnought in the mirror, [Survival]{Survival of the Fittest}, Deed, [Sphere]{Sphere of Resistance}, [Oath]{Oath of Druids}, Library, Mox, Aura of Silence, Seal of Cleansing, Hidden Gibbons, Standstill, Humility, Grid, Opalescence, [Stasis]{Stasis}, Vise, Root Maze, Zombie Infestation, [Aluren]{Aluren}, Dream Halls and every artifact in a Devourer deck, for one mana. Size it by how many targets they have and how much they matter: roughly one copy per three or four in their 75, but all three when a few of them decide the game, as the Dreadnoughts do in the mirror, and against most of the artifact-and-enchantment decks.
 
 ### Back to Basics (2)
 
@@ -17,7 +17,7 @@ The lock for decks built on nonbasic lands, and the answer to manlands and utili
 ### Blue Elemental Blast (2) and Hydroblast (2)
 
 {cards: Blue Elemental Blast | Hydroblast}
-Four blasts for Sligh and Goblins, where they counter Fireblast, Lackey, Warchief, Pyroblast and Pillar and kill Pup, Lavamancer and any goblin. The 2/2 split is for Cabal Therapy and Meddling Mage. They don't come in against decks that merely contain red: two red [Blasts]{Pyroblast} in a Terrageddon sideboard aren't worth four slots, and GR Oath Ponza's red is too clunky to hold Pyroblast mana (Mono-R Ponza, a different and rarer deck, is a blast matchup: its Stone Rains and Pillage are all red).
+Four blasts for Sligh and Goblins, where they counter Fireblast, Lackey, Warchief, Pyroblast and Pillar and kill Pup, Lavamancer and any goblin. The 2/2 split is for Cabal Therapy and Meddling Mage. They don't come in against decks that merely contain red: two red [Blasts]{Pyroblast} in a Terrageddon sideboard aren't worth four slots, and GR Oath Ponza's red is mostly a splash for its own Pyroblasts, with a few Stone Rains in some lists — too little to hit, and answering their Blasts alone isn't worth the slots (Mono-R Ponza, a different and rarer deck, is a blast matchup: its Stone Rains and Pillage are all red).
 
 ### Brain Freeze (2)
 

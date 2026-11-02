@@ -117,7 +117,7 @@ Unknown cards fail the build with the command to add them. Add the card, don't w
    doesn't shuffle; Annul doesn't counter Brain Freeze; Meddling Mage has no trigger and rarely names
    Stifle; Sutured Ghoul's exile is a replacement effect (not Stifle-able); Volrath's Shapeshifter's copy
    is static, its "2: discard" is the activation; Pernicious Deed is black-green; Negator is mana value
-   4; Hidden Gibbons flips to 4/4; Tendrils, Mind's Desire, Rule of Law are not Premodern-legal; Rishadan
+   3; Hidden Gibbons flips to 4/4; Tendrils, Mind's Desire, Rule of Law are not Premodern-legal; Rishadan
    Port taps basics; B2B does hurt Port (it taps once and never untaps), but Port alone isn't the reason to bring B2B — Mishra's Factory and the other nonbasics are; cycling lands are stopped by Web, not an edge for B2B;
    Vision Charm's land mode only touches basics (no duals/shocks in Premodern), except the Lairs and the Urza's lands (Lair and Urza's are land types it can name); Charm your Dreadnought
    BEFORE cracking Keg at 1, never "in response"; never Peek yourself; Dreadnought is a creature so
