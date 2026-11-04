@@ -1794,6 +1794,11 @@ id = "af7c2def-d20d-4670-8950-7042e9380844"
 set = "pr2"
 number = "3"
 
+[cards."Soldier token"]
+id = "5b953ca2-5be4-4c6a-a0fd-b53219ca6341"
+set = "pr2"
+number = "8"
+
 [cards."Llanowar Wastes"]
 id = "610b7cd5-5532-45a9-acfe-24a818034d1c"
 set = "apc"
@@ -1843,3 +1848,8 @@ number = "91"
 id = "b7ad3b81-f706-4b33-b1ec-7600182a5232"
 set = "wth"
 number = "105"
+
+[cards."Jester's Cap"]
+id = "47ac44d0-8090-4e7b-ac47-c567294f185e"
+set = "ice"
+number = "324"

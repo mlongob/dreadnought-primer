@@ -613,3 +613,56 @@ Keep the Disenchant away from the Meddling Mage and the Counterspell: Disenchant
 
 **The risk.** They draw a card next turn, and a second counter or a second answer to the Keg off the top can still beat you.
 {/answer}
+
+### Puzzle 15: the Duress on the stack
+
+{puzzle}
+turn = 21
+active = "them"
+phase = "main1"
+storm = 1
+[[stack]]
+card = "Duress"
+by = "them"
+target = "You"
+[them]
+life = 20
+library = 37
+hand = ["?", "?", "?", "?"]
+lands = ["Swamp (tapped)", "Swamp", "Swamp", "Plains", "Plains", "Plains", "Plains"]
+permanents = ["Soldier token", "Soldier token", "Soldier token", "Soldier token"]
+graveyard = ["Duress", "Gerrard's Verdict", "Exalted Angel", "Gerrard's Verdict", "Phyrexian Arena", "Decree of Justice", "Plains", "Exalted Angel", "Swamp", "Gerrard's Verdict", "Decree of Justice"]
+[you]
+life = 6
+library = 32
+hand = ["Thwart", "Foil", "Foil", "Counterspell", "Brain Freeze", "Brain Freeze", "Stifle"]
+lands = ["Island", "Island", "Island", "Island", "Island", "Island"]
+graveyard = ["Counterspell", "Annul", "Counterspell", "Counterspell", "Annul"]
+{/puzzle}
+
+Game two against BW Control. They cast Duress before combat. Both your Flashes of Insight have been flashed back and exiled, and the third Brain Freeze is in your library. What do you do?
+
+{answer}
+Go now, with the Duress on the stack. Thwart, both Foils and the Counterspell go on the Duress, and both Freezes follow.
+
+1. Tap three Islands for UUU. Holding priority, cast Thwart on the Duress, returning those three Islands to your hand. Storm: 2.
+2. Hold priority and cast Foil on the Duress, discarding two of the Islands. Storm: 3.
+3. Hold priority and cast the second Foil, discarding the third Island and the Stifle. Storm: 4.
+4. Hold priority and cast Counterspell on the Duress, paying UU from your pool. Storm: 5.
+5. Hold priority and cast Brain Freeze on them with the last U in your pool and an Island. Release priority. Storm: 6. The Freeze and its five copies mill eighteen; nineteen cards left.
+6. When the first Freeze and its copies have resolved, with the Counterspell still on the stack, cast the second Freeze with your last two Islands and release priority. Storm: 7. The Freeze and its six copies mill twenty-one, thirty-nine in all; their library is empty.
+
+**The count.** Five spells come before the first Freeze — the Duress, the Thwart, two Foils and the Counterspell — so it mills eighteen. The second counts the first and mills twenty-one. Thirty-nine against a library of thirty-seven. Then the Counterspell counters the Duress and everything under it has nothing left to counter. Their attack takes you to two, and they lose at their next draw step.
+
+**Why hold priority.** Release it after the Thwart and they pass: the Thwart resolves, the Duress is countered, and the Foils and the Counterspell have nothing left to target. Each counter has to go on the stack while the Duress is still there, and that only happens if you keep priority until the last one is cast. Say it out loud in paper. On MTGO, hold Ctrl through every step of casting each spell, from clicking it in your hand to tapping the mana, until the last counter is on the stack.
+
+**Why release it before the second Freeze.** Storm counts every spell cast before it this turn, so the second Freeze counts at least six whenever you cast it this turn, and the mana you floated has already been spent. Letting the first resolve costs you nothing, and it lets you see what it did before you commit the second: against a deck that can reshuffle its graveyard, like a Gaea's Blessing deck, that is the difference between a win and a Freeze thrown into a reshuffle.
+
+**Why not counter the Duress and wait for their end step.** The storm is still there, but the targets aren't. With the Duress gone, nothing is on the stack for your counters until you cast a Freeze, so the first Freeze goes first, counting only the Duress and the Counterspell: nine cards. Thwart it and Foil the Thwart twice to keep it, and the second Freeze counts six: twenty-one. Thirty, seven short. And the Islands Thwart returns only pay for anything in the step you tap them in: counter the Duress with everything now and leave both Freezes for the end step, and three Islands can't cast two of them.
+
+**Why not a later turn.** Four Soldiers take you to two this turn and kill you on the next. Your turn and their next upkeep both start the storm at zero, with nothing of theirs on the stack, and the same cards mill about half of what they do now.
+
+**The order matters too.** Cast the first Freeze before any one of the counters and it counts one spell fewer: fifteen, plus the second's twenty-one, thirty-six, one short. Every counter goes first; the Freezes go last.
+
+**The lesson.** A single spell of theirs is a target for every counter in your hand, and every counter you throw at it is storm for the Freeze. Their spell on the stack is the window; once it resolves or is countered, the counters left in your hand can only count by targeting your own spells, after the first Freeze has already gone.
+{/answer}
